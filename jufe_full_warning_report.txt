@@ -1,0 +1,101 @@
+JUFE-Lint v0.1.0
+Scanned 14 Markdown file(s).
+
+/Users/warrigallife/Desktop/JUFE_CLEAN_VERIFIED/JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/Chapter_1_Field_State.md
+  WARNING JUFE015 line 118: Duplicate heading; first seen on line 68: 'Definition'.
+  WARNING JUFE015 line 132: Duplicate heading; first seen on line 82: 'Role'.
+  WARNING JUFE015 line 142: Duplicate heading; first seen on line 92: 'Required properties'.
+  WARNING JUFE015 line 151: Duplicate heading; first seen on line 101: 'Used by'.
+  WARNING JUFE015 line 166: Duplicate heading; first seen on line 68: 'Definition'.
+  WARNING JUFE015 line 201: Duplicate heading; first seen on line 92: 'Required properties'.
+  WARNING JUFE024 line 227: Unknown status value: 'EXPLICIT EXPRESSION / PROVISIONAL NAME'.
+  WARNING JUFE015 line 231: Duplicate heading; first seen on line 68: 'Definition'.
+  WARNING JUFE015 line 249: Duplicate heading; first seen on line 179: 'Important limitation'.
+  WARNING JUFE015 line 262: Duplicate heading; first seen on line 82: 'Role'.
+  WARNING JUFE015 line 271: Duplicate heading; first seen on line 52: 'Unresolved'.
+  WARNING JUFE015 line 287: Duplicate heading; first seen on line 68: 'Definition'.
+  WARNING JUFE015 line 319: Duplicate heading; first seen on line 179: 'Important limitation'.
+  WARNING JUFE024 line 329: Unknown status value: 'EXPLICIT CONCEPT / PROVISIONAL SIX-ZERO REPRESENTATION'.
+  WARNING JUFE015 line 332: Duplicate heading; first seen on line 68: 'Definition'.
+  WARNING JUFE015 line 345: Duplicate heading; first seen on line 179: 'Important limitation'.
+  WARNING JUFE015 line 374: Duplicate heading; first seen on line 68: 'Definition'.
+  WARNING JUFE015 line 379: Duplicate heading; first seen on line 92: 'Required properties'.
+  WARNING JUFE015 line 395: Duplicate heading; first seen on line 68: 'Definition'.
+/Users/warrigallife/Desktop/JUFE_CLEAN_VERIFIED/JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/Chapter_2_Field_Lifecycle.md
+  WARNING JUFE015 line 131: Duplicate heading; first seen on line 101: 'Definition'.
+  WARNING JUFE015 line 159: Duplicate heading; first seen on line 101: 'Definition'.
+  WARNING JUFE015 line 165: Duplicate heading; first seen on line 137: 'Purpose'.
+  WARNING JUFE015 line 189: Duplicate heading; first seen on line 101: 'Definition'.
+  WARNING JUFE015 line 195: Duplicate heading; first seen on line 137: 'Purpose'.
+  WARNING JUFE015 line 204: Duplicate heading; first seen on line 101: 'Definition'.
+  WARNING JUFE015 line 212: Duplicate heading; first seen on line 137: 'Purpose'.
+  WARNING JUFE015 line 222: Duplicate heading; first seen on line 143: 'Behaviour'.
+  WARNING JUFE015 line 235: Duplicate heading; first seen on line 152: 'Engineering Constraint'.
+  WARNING JUFE015 line 243: Duplicate heading; first seen on line 101: 'Definition'.
+  WARNING JUFE015 line 251: Duplicate heading; first seen on line 137: 'Purpose'.
+  WARNING JUFE015 line 259: Duplicate heading; first seen on line 143: 'Behaviour'.
+  WARNING JUFE015 line 270: Duplicate heading; first seen on line 116: 'Engineering Interpretation'.
+  WARNING JUFE015 line 280: Duplicate heading; first seen on line 101: 'Definition'.
+  WARNING JUFE015 line 288: Duplicate heading; first seen on line 137: 'Purpose'.
+  WARNING JUFE015 line 294: Duplicate heading; first seen on line 143: 'Behaviour'.
+/Users/warrigallife/Desktop/JUFE_CLEAN_VERIFIED/JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/Chapter_3_Gradient_Mechanics.md
+  WARNING JUFE015 line 85: Duplicate heading; first seen on line 62: 'Definition'.
+  WARNING JUFE015 line 92: Duplicate heading; first seen on line 69: 'Purpose'.
+  WARNING JUFE015 line 112: Duplicate heading; first seen on line 62: 'Definition'.
+  WARNING JUFE015 line 119: Duplicate heading; first seen on line 69: 'Purpose'.
+  WARNING JUFE015 line 125: Duplicate heading; first seen on line 98: 'Behaviour'.
+  WARNING JUFE015 line 140: Duplicate heading; first seen on line 62: 'Definition'.
+  WARNING JUFE015 line 147: Duplicate heading; first seen on line 69: 'Purpose'.
+  WARNING JUFE015 line 152: Duplicate heading; first seen on line 98: 'Behaviour'.
+/Users/warrigallife/Desktop/JUFE_CLEAN_VERIFIED/JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/Chapter_4_Coupled_Evolution.md
+  WARNING JUFE015 line 117: Duplicate heading; first seen on line 72: 'Definition'.
+  WARNING JUFE015 line 124: Duplicate heading; first seen on line 84: 'Purpose'.
+  WARNING JUFE015 line 129: Duplicate heading; first seen on line 90: 'Behaviour'.
+  WARNING JUFE015 line 139: Duplicate heading; first seen on line 102: 'Outstanding Questions'.
+  WARNING JUFE015 line 154: Duplicate heading; first seen on line 72: 'Definition'.
+  WARNING JUFE015 line 164: Duplicate heading; first seen on line 84: 'Purpose'.
+  WARNING JUFE015 line 169: Duplicate heading; first seen on line 90: 'Behaviour'.
+  WARNING JUFE015 line 188: Duplicate heading; first seen on line 102: 'Outstanding Questions'.
+  WARNING JUFE015 line 203: Duplicate heading; first seen on line 72: 'Definition'.
+  WARNING JUFE015 line 209: Duplicate heading; first seen on line 84: 'Purpose'.
+  WARNING JUFE015 line 214: Duplicate heading; first seen on line 90: 'Behaviour'.
+  WARNING JUFE015 line 220: Duplicate heading; first seen on line 102: 'Outstanding Questions'.
+  WARNING JUFE015 line 235: Duplicate heading; first seen on line 72: 'Definition'.
+  WARNING JUFE015 line 247: Duplicate heading; first seen on line 84: 'Purpose'.
+  WARNING JUFE015 line 252: Duplicate heading; first seen on line 90: 'Behaviour'.
+  WARNING JUFE015 line 268: Duplicate heading; first seen on line 102: 'Outstanding Questions'.
+  WARNING JUFE015 line 282: Duplicate heading; first seen on line 72: 'Definition'.
+  WARNING JUFE015 line 291: Duplicate heading; first seen on line 84: 'Purpose'.
+  WARNING JUFE015 line 297: Duplicate heading; first seen on line 90: 'Behaviour'.
+  WARNING JUFE015 line 309: Duplicate heading; first seen on line 102: 'Outstanding Questions'.
+/Users/warrigallife/Desktop/JUFE_CLEAN_VERIFIED/JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/Chapter_5_Phase_Lock.md
+  WARNING JUFE015 line 108: Duplicate heading; first seen on line 92: 'Status'.
+  WARNING JUFE015 line 126: Duplicate heading; first seen on line 92: 'Status'.
+  WARNING JUFE015 line 144: Duplicate heading; first seen on line 92: 'Status'.
+/Users/warrigallife/Desktop/JUFE_CLEAN_VERIFIED/JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/Chapter_5_Post_Phase_Lock_Mechanics.md
+  WARNING JUFE015 line 164: Duplicate heading; first seen on line 97: 'Unresolved representation'.
+  WARNING JUFE015 line 189: Duplicate heading; first seen on line 157: 'Explicit role'.
+/Users/warrigallife/Desktop/JUFE_CLEAN_VERIFIED/JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/Chapter_7_Unified_ABTM_Field_Equations.md
+  WARNING JUFE015 line 64: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 98: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 134: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 209: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 267: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 317: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 368: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 423: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 454: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 506: Duplicate heading; first seen on line 14: 'Dependencies'.
+  WARNING JUFE015 line 514: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 570: Duplicate heading; first seen on line 14: 'Dependencies'.
+  WARNING JUFE015 line 578: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 626: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 660: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 694: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 730: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 793: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 839: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 876: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 896: Duplicate heading; first seen on line 35: 'Specification Status'.
+
+Summary: 0 error(s), 89 warning(s).

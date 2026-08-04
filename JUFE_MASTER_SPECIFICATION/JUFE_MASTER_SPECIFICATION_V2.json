@@ -1,0 +1,364 @@
+{
+  "title": "JUFE Master Specification",
+  "version": "2.0.0-draft",
+  "source": "Relational Unified Field Mechanics: Analytical Resolution of Critical Cosmological Anomalies\nAuthor: Thomas F. Jennings\nProject: JUFE Universe Project Core Specification Supplement\nDate: July 7, 2026\n",
+  "created_at": "2026-07-15T14:29:24",
+  "definitions": [
+    {
+      "id": "DEF-001",
+      "term": "Intersecting Space-Field Matrix M^6",
+      "status": "EXPLICIT",
+      "definition": "A six-dimensional manifold coupling three compressive and three repulsive field components."
+    },
+    {
+      "id": "DEF-002",
+      "term": "Inward Compressive Field M",
+      "status": "EXPLICIT",
+      "definition": "A three-component field M=(Mx,My,Mz) in R^3_comp."
+    },
+    {
+      "id": "DEF-003",
+      "term": "Outward Repulsive Field A",
+      "status": "EXPLICIT",
+      "definition": "A three-component field A=(Ax,Ay,Az) in R^3_rep."
+    },
+    {
+      "id": "DEF-004",
+      "term": "Propagation Vector D",
+      "status": "EXPLICIT",
+      "definition": "The instantaneous direction of a field manifestation, determined by the local compressive-field gradient."
+    },
+    {
+      "id": "DEF-005",
+      "term": "Structural Spike",
+      "status": "EXPLICIT",
+      "definition": "A localized increase in compressive field magnitude associated with mass-energy density."
+    },
+    {
+      "id": "DEF-006",
+      "term": "Shared 3D Footprint",
+      "status": "EXPLICIT",
+      "definition": "The three-dimensional spatial domain in which M and A are evaluated."
+    },
+    {
+      "id": "DEF-007",
+      "term": "Maximum Tension Gradient",
+      "status": "PARTIALLY_DEFINED",
+      "definition": "The dominant local gradient governing propagation; the exact selection metric remains unresolved."
+    },
+    {
+      "id": "DEF-008",
+      "term": "Field Cell",
+      "status": "EXPLICIT",
+      "definition": "A localized unit of field state capable of tension, isolation, locking, reset, and reuse."
+    },
+    {
+      "id": "DEF-009",
+      "term": "Field Traffic",
+      "status": "EXPLICIT",
+      "definition": "Propagation of field influence through connected cells or nodes."
+    },
+    {
+      "id": "DEF-010",
+      "term": "Macro-scale Tier Boundary n",
+      "status": "EXPLICIT",
+      "definition": "A scale-dependent boundary at which collapse-driven tension reaches cell capacity."
+    },
+    {
+      "id": "DEF-011",
+      "term": "Boundary Jam",
+      "status": "EXPLICIT",
+      "definition": "A local condition where maximum tension and limiting resistance prevent normal traffic through a cell."
+    },
+    {
+      "id": "DEF-012",
+      "term": "Closed Renormalization Manifold",
+      "status": "PARTIALLY_DEFINED",
+      "definition": "An isolated local manifold in which internal M/A evolution continues after external traffic bypasses the node."
+    },
+    {
+      "id": "DEF-013",
+      "term": "Phase Lock",
+      "status": "EXPLICIT",
+      "definition": "The state reached as M-A approaches the zero vector."
+    },
+    {
+      "id": "DEF-014",
+      "term": "Cross-Axial Helical Deflection",
+      "status": "REFERENCED_DEPENDENCY",
+      "definition": "A mechanism cited as Lemma 3.1 that transfers asymmetric force into orthogonal phase dimensions; source statement not yet supplied."
+    },
+    {
+      "id": "DEF-015",
+      "term": "Orthogonal Phase Dimensions",
+      "status": "PARTIALLY_DEFINED",
+      "definition": "Dimensions receiving redistributed asymmetric force during phase-lock evolution."
+    },
+    {
+      "id": "DEF-016",
+      "term": "Stabilized Structural Matrix",
+      "status": "EXPLICIT",
+      "definition": "The preserved internal structure of a phase-locked cell prior to ejection."
+    },
+    {
+      "id": "DEF-017",
+      "term": "Harmonic Packet Phi_ejected",
+      "status": "EXPLICIT",
+      "definition": "The non-truncated structural information ejected from a locked boundary node."
+    },
+    {
+      "id": "DEF-018",
+      "term": "Clean Cell Pool",
+      "status": "PARTIALLY_DEFINED",
+      "definition": "A network destination for preserved harmonic packets after ejection."
+    },
+    {
+      "id": "DEF-019",
+      "term": "Absolute Vacuum State Psi_0",
+      "status": "EXPLICIT",
+      "definition": "The reset zero-state of a local coordinate after successful ejection."
+    },
+    {
+      "id": "DEF-020",
+      "term": "Structural Bottleneck",
+      "status": "EXPLICIT",
+      "definition": "A boundary condition where field traffic is constrained and recycling/ejection occurs."
+    },
+    {
+      "id": "DEF-021",
+      "term": "Phase-Cancellation Event",
+      "status": "REFERENCED_DEPENDENCY",
+      "definition": "A resolution process cited in relation to a Riemann Zeta zero; executable definition not yet supplied."
+    }
+  ],
+  "axioms": [
+    {
+      "id": "AX-001",
+      "title": "Absolute Conservation of Field Duality",
+      "equation": "dM/dt = -dA/dt",
+      "status": "EXPLICIT"
+    },
+    {
+      "id": "AX-002",
+      "title": "Gradient Autonomy",
+      "equation": "D \u221d -\u2207M",
+      "status": "EXPLICIT"
+    },
+    {
+      "id": "AX-003",
+      "title": "No Static or Identity-Based Trajectories",
+      "equation": "direction is not a function of intrinsic particle labels",
+      "status": "EXPLICIT"
+    },
+    {
+      "id": "AX-004",
+      "title": "Information Non-Truncation",
+      "equation": "structural information is preserved through ejection/reset",
+      "status": "EXPLICIT_BUT_DEPENDENT_ON_THM_4_2"
+    },
+    {
+      "id": "AX-005",
+      "title": "Global Tensegrity Equilibrium",
+      "equation": "\u03a3_global \u03a3_i(M_i + A_i) = 0",
+      "status": "EXPLICIT"
+    }
+  ],
+  "rules": [
+    {
+      "id": "TH-001",
+      "title": "Local Gradient Dominance",
+      "assumptions": [
+        "||M_local|| >> ||A_local||",
+        "AX-002"
+      ],
+      "conclusion": "D_particle = -k\u2207M_local",
+      "status": "DRAFT_THEOREM"
+    },
+    {
+      "id": "TR-001",
+      "title": "Jammed-Node Bypass",
+      "assumptions": [
+        "cell jammed",
+        "alternative connected routes exist"
+      ],
+      "conclusion": "active field traffic bypasses the node",
+      "status": "PARTIALLY_DEFINED"
+    },
+    {
+      "id": "TR-002",
+      "title": "Cell Isolation",
+      "assumptions": [
+        "boundary jam"
+      ],
+      "conclusion": "cell enters a closed renormalization manifold",
+      "status": "PARTIALLY_DEFINED"
+    },
+    {
+      "id": "ALG-001",
+      "title": "Coupled M/A Evolution",
+      "assumptions": [
+        "isolated cell",
+        "time step supplied"
+      ],
+      "conclusion": "advance M and A with equal and opposite increments",
+      "status": "EXPLICIT_WITH_NUMERICAL_CONVENTION"
+    },
+    {
+      "id": "TR-003",
+      "title": "Phase-Lock Transition",
+      "assumptions": [
+        "coupled evolution active",
+        "||M-A|| <= tolerance"
+      ],
+      "conclusion": "cell enters LOCKED state",
+      "status": "EXPLICIT_WITH_NUMERICAL_CONVENTION"
+    },
+    {
+      "id": "TR-004",
+      "title": "Non-Truncating Ejection",
+      "assumptions": [
+        "LOCKED state",
+        "information preservation dependency satisfied"
+      ],
+      "conclusion": "C_jam -> Psi_0 + Phi_ejected",
+      "status": "PARTIALLY_DEFINED"
+    },
+    {
+      "id": "INV-001",
+      "title": "Global Scalar Balance",
+      "assumptions": [
+        "all local states supplied"
+      ],
+      "conclusion": "global scalar sum equals zero",
+      "status": "EXPLICIT"
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "DEP-001",
+      "reference": "Lemma 3.1",
+      "name": "Cross-Axial Helical Deflection",
+      "status": "MISSING_SOURCE",
+      "required_for": [
+        "TR-003",
+        "DEF-014"
+      ]
+    },
+    {
+      "id": "DEP-002",
+      "reference": "Theorem 4.2",
+      "name": "Information Cannot Be Clipped or Truncated",
+      "status": "MISSING_SOURCE",
+      "required_for": [
+        "AX-004",
+        "TR-004"
+      ]
+    },
+    {
+      "id": "DEP-003",
+      "reference": "Riemann Zeta zero phase-cancellation",
+      "name": "Phase-Cancellation Rule",
+      "status": "MISSING_DEFINITION",
+      "required_for": [
+        "DEF-021"
+      ]
+    }
+  ],
+  "state_machine": {
+    "states": [
+      "ACTIVE",
+      "GRADIENT_DRIVEN",
+      "JAMMED",
+      "ISOLATED",
+      "LOCKING",
+      "LOCKED",
+      "EJECTED",
+      "VACUUM",
+      "REUSED"
+    ],
+    "transitions": [
+      {
+        "from": "ACTIVE",
+        "to": "GRADIENT_DRIVEN",
+        "guard": "nonzero local gradient"
+      },
+      {
+        "from": "GRADIENT_DRIVEN",
+        "to": "JAMMED",
+        "guard": "tension capacity and resistance conditions met"
+      },
+      {
+        "from": "JAMMED",
+        "to": "ISOLATED",
+        "guard": "external traffic bypasses node"
+      },
+      {
+        "from": "ISOLATED",
+        "to": "LOCKING",
+        "guard": "coupled M/A evolution begins"
+      },
+      {
+        "from": "LOCKING",
+        "to": "LOCKED",
+        "guard": "phase residual within tolerance"
+      },
+      {
+        "from": "LOCKED",
+        "to": "EJECTED",
+        "guard": "structural state preserved"
+      },
+      {
+        "from": "EJECTED",
+        "to": "VACUUM",
+        "guard": "local coordinate reset to Psi_0"
+      },
+      {
+        "from": "VACUUM",
+        "to": "REUSED",
+        "guard": "clean-cell allocation satisfied"
+      },
+      {
+        "from": "REUSED",
+        "to": "ACTIVE",
+        "guard": "cell reinitialized"
+      }
+    ]
+  },
+  "claims_register": [
+    {
+      "id": "CLM-001",
+      "claim": "Model accounts for downward antihydrogen acceleration in a dominant matter field.",
+      "status": "MODEL_CLAIM",
+      "validation_needed": [
+        "predicted acceleration magnitude",
+        "comparison to ALPHA measurement",
+        "uncertainty model"
+      ]
+    },
+    {
+      "id": "CLM-002",
+      "claim": "Model accounts for non-destructive horizon evaporation.",
+      "status": "MODEL_CLAIM",
+      "validation_needed": [
+        "derived spectrum",
+        "power law",
+        "temperature relation",
+        "information accounting"
+      ]
+    }
+  ],
+  "open_questions": [
+    "How is the maximum tension gradient selected?",
+    "What network topology defines valid bypass routes?",
+    "What is the finite numerical approximation to infinite resistance?",
+    "What is the cell tension-capacity value and unit?",
+    "What integration method and time step govern coupled evolution?",
+    "What phase-lock tolerance is physically justified?",
+    "What are the clean-cell allocation and reinsertion rules?",
+    "What is the precise content of Lemma 3.1?",
+    "What is the precise content of Theorem 4.2?",
+    "How is phase-cancellation at a Riemann Zeta zero defined?",
+    "How does the 64-cell/8\u00d78 representation map to the coordinate-free 3D footprint?",
+    "How is the original Z6 trace diagnostic derived from the M^6 field?"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "version": "0.1.0",
+  "definitions": [
+    {
+      "id": "DEF-001",
+      "name": "Local Field Cell",
+      "status": "EXPLICIT",
+      "definition": "A localized field unit containing compressive and repulsive state information."
+    },
+    {
+      "id": "DEF-002",
+      "name": "Compressive Field M",
+      "status": "EXPLICIT",
+      "definition": "A three-component inward compressive vector field (Mx, My, Mz)."
+    },
+    {
+      "id": "DEF-003",
+      "name": "Repulsive Field A",
+      "status": "EXPLICIT",
+      "definition": "A three-component outward repulsive vector field (Ax, Ay, Az)."
+    },
+    {
+      "id": "DEF-004",
+      "name": "Local Manifold State Psi",
+      "status": "EXPLICIT",
+      "definition": "The six-component local state (Mx, My, Mz, Ax, Ay, Az)."
+    },
+    {
+      "id": "DEF-005",
+      "name": "Propagation Vector D",
+      "status": "EXPLICIT",
+      "definition": "The local propagation vector governed by the negative compressive-field gradient."
+    },
+    {
+      "id": "DEF-006",
+      "name": "Phase Lock",
+      "status": "EXPLICIT",
+      "definition": "The state approached as M - A tends to zero."
+    },
+    {
+      "id": "DEF-007",
+      "name": "Boundary Jam",
+      "status": "EXPLICIT",
+      "definition": "A state reached when local tension capacity and limiting external resistance occur together."
+    },
+    {
+      "id": "DEF-008",
+      "name": "Harmonic Packet",
+      "status": "EXPLICIT",
+      "definition": "Preserved structural information ejected after phase lock."
+    },
+    {
+      "id": "DEF-009",
+      "name": "Clean Cell Pool",
+      "status": "UNRESOLVED",
+      "definition": "Destination pool for preserved structural packets; reinsertion rules remain undefined."
+    },
+    {
+      "id": "DEF-010",
+      "name": "64-Cell Frame",
+      "status": "PROVISIONAL_MAPPING",
+      "definition": "An 8 x 8 spatial frame containing 64 coordinates."
+    }
+  ]
+}

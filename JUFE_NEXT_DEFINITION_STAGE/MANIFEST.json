@@ -1,0 +1,18 @@
+{
+  "package": "JUFE_NEXT_DEFINITION_STAGE",
+  "created_at": "2026-07-15T14:48:13",
+  "files": [
+    "LEMMA_3_1_TEMPLATE.md",
+    "THEOREM_4_2_TEMPLATE.md",
+    "RIEMANN_PHASE_CANCELLATION_TEMPLATE.md",
+    "GRID_64_MAPPING_CONTRACT.md",
+    "NEXT_STAGE_ROADMAP.md"
+  ],
+  "core_files_modified": false,
+  "next_required_user_content": [
+    "Formal or draft wording for Lemma 3.1",
+    "Formal or draft wording for Theorem 4.2",
+    "Definition of Riemann-Zeta phase cancellation",
+    "Choice of 64-cell representation"
+  ]
+}

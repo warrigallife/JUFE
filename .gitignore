@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# VS Code local settings
+.vscode/settings.json
+
+# Virtual environments
+.venv/
+venv/
+
+# Python cache
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/

@@ -1,0 +1,71 @@
+{
+  "version": "0.1.0",
+  "theorems": [
+    {
+      "id": "TH-001",
+      "title": "Local Gradient Dominance",
+      "status": "DRAFT",
+      "assumptions": [
+        "||M_local|| >> ||A_local||",
+        "Gradient autonomy"
+      ],
+      "conclusion": "Propagation aligns with -grad(M_local).",
+      "unresolved": [
+        "Numerical threshold for 'much greater than'."
+      ]
+    },
+    {
+      "id": "TH-002",
+      "title": "Boundary Isolation",
+      "status": "DRAFT",
+      "assumptions": [
+        "Tension reaches capacity",
+        "Resistance gradient reaches limiting threshold"
+      ],
+      "conclusion": "The local cell enters an isolated jammed state.",
+      "unresolved": [
+        "Finite resistance threshold",
+        "Isolation topology."
+      ]
+    },
+    {
+      "id": "TH-003",
+      "title": "Phase-Lock Transition",
+      "status": "DRAFT",
+      "assumptions": [
+        "Jammed or isolated local state",
+        "M and A converge"
+      ],
+      "conclusion": "The cell enters phase lock.",
+      "unresolved": [
+        "Numerical tolerance",
+        "Time integration scheme."
+      ]
+    },
+    {
+      "id": "TH-004",
+      "title": "Non-Truncating Ejection",
+      "status": "DRAFT",
+      "assumptions": [
+        "Cell is phase locked",
+        "Information preservation axiom"
+      ],
+      "conclusion": "The cell resets to Psi_0 and emits Phi_ejected without deleting structural information.",
+      "unresolved": [
+        "Clean-cell destination and reinsertion rules."
+      ]
+    },
+    {
+      "id": "TH-005",
+      "title": "Original Z6 Stability",
+      "status": "ACTIVE",
+      "assumptions": [
+        "A numerical barrier matrix is supplied"
+      ],
+      "conclusion": "Stable is true when Trace(Psi_barrier) mod 6 = 0.",
+      "unresolved": [
+        "Derivation connecting this rule to the 64-cell M6 frame."
+      ]
+    }
+  ]
+}

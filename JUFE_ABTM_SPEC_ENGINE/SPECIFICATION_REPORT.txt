@@ -1,0 +1,68 @@
+JUFE / ABTM SPECIFICATION REPORT
+================================================================
+Register version            : 0.1.0
+Total requirements          : 14
+Implementation coverage     : 100.0%
+Requirements with questions : 11
+Fully resolved requirements : 3
+
+CATEGORY SUMMARY
+----------------------------------------------------------------
+axiom                1
+definition           3
+equation             1
+invariant            3
+mapping              1
+theorem              1
+transition           4
+
+STATUS SUMMARY
+----------------------------------------------------------------
+explicit                 7
+explicit_in_code         1
+explicit_with_convention 2
+partially_defined        3
+provisional              1
+
+OPEN QUESTIONS
+----------------------------------------------------------------
+REQ-AX-001 — Gradient autonomy
+  • Boundary conditions for gradient evaluation
+  • Spatial embedding of the third axis
+
+REQ-TH-001 — Local gradient dominance
+  • Numerical definition of 'much greater than'
+
+REQ-INV-001 — Coupled field duality
+  • Integration scheme
+  • Time-step units
+
+REQ-TR-001 — Boundary jam
+  • Tension capacity
+  • Finite resistance threshold
+
+REQ-TR-002 — Phase lock
+  • Physical basis of numerical tolerance
+
+REQ-TR-003 — Non-truncating ejection
+  • Clean-cell destination
+  • Reinsertion rules
+  • State hashes
+
+REQ-INV-002 — Global tensegrity equilibrium
+  • Whether scalar balance alone is sufficient
+
+REQ-EQ-001 — Sensitivity response
+  • Units and provenance of S and delta E
+
+REQ-TR-004 — Bifurcation
+  • Physically justified determinant threshold
+
+REQ-INV-003 — Original Z6 trace
+  • Derivation from the 64-cell M6 field
+
+REQ-MAP-001 — 64-cell field frame
+  • One scalar, one subgroup, or one six-component state per cell
+  • Third-axis representation
+  • Neighbour topology
+  • Boundary topology

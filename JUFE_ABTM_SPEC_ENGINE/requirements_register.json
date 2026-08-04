@@ -1,0 +1,209 @@
+{
+  "project": "JUFE / ABTM Requirements Register",
+  "version": "0.1.0",
+  "created_at": "2026-07-15T14:14:08",
+  "requirements": [
+    {
+      "id": "REQ-DEF-001",
+      "category": "definition",
+      "title": "Compressive field",
+      "manuscript_statement": "M is an inward compressive field in R^3_comp.",
+      "software_requirement": "Represent M as exactly three finite numerical components: Mx, My, Mz.",
+      "status": "explicit",
+      "implemented_by": [
+        "abtm_expansion.ABTM_Expansion.compose_manifold_state"
+      ],
+      "open_questions": []
+    },
+    {
+      "id": "REQ-DEF-002",
+      "category": "definition",
+      "title": "Repulsive field",
+      "manuscript_statement": "A is an outward repulsive field in R^3_rep.",
+      "software_requirement": "Represent A as exactly three finite numerical components: Ax, Ay, Az.",
+      "status": "explicit",
+      "implemented_by": [
+        "abtm_expansion.ABTM_Expansion.compose_manifold_state"
+      ],
+      "open_questions": []
+    },
+    {
+      "id": "REQ-DEF-003",
+      "category": "definition",
+      "title": "Six-component local state",
+      "manuscript_statement": "The intersecting space-field matrix couples three compressive and three repulsive dimensions.",
+      "software_requirement": "Represent one local state as Psi=(Mx,My,Mz,Ax,Ay,Az).",
+      "status": "explicit",
+      "implemented_by": [
+        "abtm_expansion.ABTM_Expansion.compose_manifold_state",
+        "abtm_expansion.ABTM_Expansion.split_manifold_state"
+      ],
+      "open_questions": []
+    },
+    {
+      "id": "REQ-AX-001",
+      "category": "axiom",
+      "title": "Gradient autonomy",
+      "manuscript_statement": "D is proportional to -grad(M); no hardcoded trajectory depends on intrinsic particle properties.",
+      "software_requirement": "Compute propagation from the supplied compressive-field gradient only.",
+      "status": "explicit",
+      "implemented_by": [
+        "abtm_expansion.ABTM_Expansion.scalar_field_gradient",
+        "abtm_expansion.ABTM_Expansion.propagation_from_gradient"
+      ],
+      "open_questions": [
+        "Boundary conditions for gradient evaluation",
+        "Spatial embedding of the third axis"
+      ]
+    },
+    {
+      "id": "REQ-TH-001",
+      "category": "theorem",
+      "title": "Local gradient dominance",
+      "manuscript_statement": "When ||M_local|| >> ||A_local||, trajectory follows -k grad(M_local).",
+      "software_requirement": "Compare field norms and declare dominance only against an explicit threshold.",
+      "status": "partially_defined",
+      "implemented_by": [
+        "abtm_expansion.ABTM_Expansion.dominance_ratio",
+        "abtm_expansion.ABTM_Expansion.local_gradient_dominates"
+      ],
+      "open_questions": [
+        "Numerical definition of 'much greater than'"
+      ]
+    },
+    {
+      "id": "REQ-INV-001",
+      "category": "invariant",
+      "title": "Coupled field duality",
+      "manuscript_statement": "dM/dt = -dA/dt.",
+      "software_requirement": "Advance M and A together with equal and opposite increments.",
+      "status": "explicit",
+      "implemented_by": [
+        "abtm_expansion.ABTM_Expansion.coupled_field_step"
+      ],
+      "open_questions": [
+        "Integration scheme",
+        "Time-step units"
+      ]
+    },
+    {
+      "id": "REQ-TR-001",
+      "category": "transition",
+      "title": "Boundary jam",
+      "manuscript_statement": "A cell jams at maximum tension when adjacent resistance gradient tends to infinity.",
+      "software_requirement": "Require both tension-capacity and resistance-threshold conditions.",
+      "status": "partially_defined",
+      "implemented_by": [
+        "abtm_expansion.ABTM_Expansion.detect_boundary_jam"
+      ],
+      "open_questions": [
+        "Tension capacity",
+        "Finite resistance threshold"
+      ]
+    },
+    {
+      "id": "REQ-TR-002",
+      "category": "transition",
+      "title": "Phase lock",
+      "manuscript_statement": "lim_(t->t_lock)(M(t)-A(t))=0.",
+      "software_requirement": "Calculate ||M-A|| and compare with a declared tolerance.",
+      "status": "explicit_with_convention",
+      "implemented_by": [
+        "abtm_expansion.ABTM_Expansion.phase_lock"
+      ],
+      "open_questions": [
+        "Physical basis of numerical tolerance"
+      ]
+    },
+    {
+      "id": "REQ-TR-003",
+      "category": "transition",
+      "title": "Non-truncating ejection",
+      "manuscript_statement": "C_jam -> Psi_0 + Phi_ejected.",
+      "software_requirement": "Preserve the complete structural state before resetting the local coordinate.",
+      "status": "partially_defined",
+      "implemented_by": [
+        "abtm_expansion.ABTM_Expansion.eject_harmonic_packet"
+      ],
+      "open_questions": [
+        "Clean-cell destination",
+        "Reinsertion rules",
+        "State hashes"
+      ]
+    },
+    {
+      "id": "REQ-INV-002",
+      "category": "invariant",
+      "title": "Global tensegrity equilibrium",
+      "manuscript_statement": "sum_global sum_i(M_i + A_i) = 0.",
+      "software_requirement": "Report scalar and component-wise global balance.",
+      "status": "explicit",
+      "implemented_by": [
+        "abtm_expansion.ABTM_Expansion.global_field_balance"
+      ],
+      "open_questions": [
+        "Whether scalar balance alone is sufficient"
+      ]
+    },
+    {
+      "id": "REQ-EQ-001",
+      "category": "equation",
+      "title": "Sensitivity response",
+      "manuscript_statement": "delta Psi = S delta E.",
+      "software_requirement": "Multiply sensitivity matrix by external perturbation vector.",
+      "status": "explicit",
+      "implemented_by": [
+        "abtm_expansion.ABTM_Expansion.apply_sensitivity"
+      ],
+      "open_questions": [
+        "Units and provenance of S and delta E"
+      ]
+    },
+    {
+      "id": "REQ-TR-004",
+      "category": "transition",
+      "title": "Bifurcation",
+      "manuscript_statement": "det(S) -> 0 indicates transition to a nonlinear regime.",
+      "software_requirement": "Calculate det(S) and compare to a declared threshold.",
+      "status": "explicit_with_convention",
+      "implemented_by": [
+        "abtm_expansion.ABTM_Expansion.detect_bifurcation"
+      ],
+      "open_questions": [
+        "Physically justified determinant threshold"
+      ]
+    },
+    {
+      "id": "REQ-INV-003",
+      "category": "invariant",
+      "title": "Original Z6 trace",
+      "manuscript_statement": "Original source code defines sigma=Trace(Psi_barrier) mod 6.",
+      "software_requirement": "Return stable only when the trace residue equals zero.",
+      "status": "explicit_in_code",
+      "implemented_by": [
+        "oldmate1.ABTM_Engine.compute_manifold_stability",
+        "abtm_expansion.ABTM_Expansion.z6_stable"
+      ],
+      "open_questions": [
+        "Derivation from the 64-cell M6 field"
+      ]
+    },
+    {
+      "id": "REQ-MAP-001",
+      "category": "mapping",
+      "title": "64-cell field frame",
+      "manuscript_statement": "User-defined architecture is based on a 64-grid matrix.",
+      "software_requirement": "Support an 8x8 coordinate frame with explicit empty and overflow states.",
+      "status": "provisional",
+      "implemented_by": [
+        "jufe_64_grid_mapper"
+      ],
+      "open_questions": [
+        "One scalar, one subgroup, or one six-component state per cell",
+        "Third-axis representation",
+        "Neighbour topology",
+        "Boundary topology"
+      ]
+    }
+  ]
+}

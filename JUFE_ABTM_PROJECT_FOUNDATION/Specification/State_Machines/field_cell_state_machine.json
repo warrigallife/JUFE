@@ -1,0 +1,60 @@
+{
+  "version": "0.1.0",
+  "states": [
+    "ACTIVE",
+    "GRADIENT_DRIVEN",
+    "JAMMED",
+    "LOCKING",
+    "LOCKED",
+    "EJECTED",
+    "VACUUM",
+    "REUSED"
+  ],
+  "transitions": [
+    {
+      "from": "ACTIVE",
+      "to": "GRADIENT_DRIVEN",
+      "guard": "nonzero local gradient"
+    },
+    {
+      "from": "GRADIENT_DRIVEN",
+      "to": "JAMMED",
+      "guard": "tension >= capacity and resistance >= threshold"
+    },
+    {
+      "from": "JAMMED",
+      "to": "LOCKING",
+      "guard": "coupled M/A evolution active"
+    },
+    {
+      "from": "LOCKING",
+      "to": "LOCKED",
+      "guard": "||M-A|| <= phase_lock_tolerance"
+    },
+    {
+      "from": "LOCKED",
+      "to": "EJECTED",
+      "guard": "structural state preserved successfully"
+    },
+    {
+      "from": "EJECTED",
+      "to": "VACUUM",
+      "guard": "local coordinate reset to zero"
+    },
+    {
+      "from": "VACUUM",
+      "to": "REUSED",
+      "guard": "clean-cell allocation rule satisfied"
+    },
+    {
+      "from": "REUSED",
+      "to": "ACTIVE",
+      "guard": "cell reinitialized"
+    }
+  ],
+  "unresolved": [
+    "Clean-cell allocation rule",
+    "Whether GRADIENT_DRIVEN is a persistent state or an ACTIVE substate",
+    "Failure/recovery states"
+  ]
+}

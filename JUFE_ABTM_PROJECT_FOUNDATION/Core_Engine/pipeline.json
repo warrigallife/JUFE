@@ -1,0 +1,18 @@
+{
+  "version": "0.1.0",
+  "pipeline": [
+    "validate_input_against_definition",
+    "map_input_to_field_state",
+    "calculate_local_gradients",
+    "evaluate_local_dominance",
+    "evaluate_boundary_jam",
+    "advance_coupled_M_A_state",
+    "evaluate_phase_lock",
+    "preserve_and_eject_locked_state",
+    "evaluate_global_equilibrium",
+    "evaluate_original_Z6_trace",
+    "write_audit_record"
+  ],
+  "rule": "Every stage must cite at least one specification ID.",
+  "status": "DRAFT"
+}

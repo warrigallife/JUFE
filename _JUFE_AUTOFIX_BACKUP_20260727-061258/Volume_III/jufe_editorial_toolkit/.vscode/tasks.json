@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run JUFE Validation",
+      "type": "shell",
+      "command": "python3",
+      "args": [
+        "${workspaceFolder}/tools/jufe_lint.py",
+        "${workspaceFolder}/specification"
+      ],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}

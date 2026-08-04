@@ -1,0 +1,14 @@
+{
+  "title": "JUFE Dependency Completion Draft",
+  "version": "0.1.0",
+  "created_at": "2026-07-15T14:50:48",
+  "files": [
+    "LEMMA_3_1_PROVISIONAL.md",
+    "THEOREM_4_2_PROVISIONAL.md",
+    "RIEMANN_PHASE_CANCELLATION_STATUS.md",
+    "GRID_64_MAPPING_CONTRACT_APPROVED_DRAFT.md",
+    "UPDATED_FIELD_CELL_STATE_MACHINE.md"
+  ],
+  "important_note": "This package formalizes only what can be supported from the supplied manuscript. Lemma 3.1 and the Riemann-Zeta rule remain mathematically incomplete.",
+  "core_files_modified": false
+}

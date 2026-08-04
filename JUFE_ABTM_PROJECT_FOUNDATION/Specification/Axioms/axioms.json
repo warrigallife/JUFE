@@ -1,0 +1,45 @@
+{
+  "version": "0.1.0",
+  "axioms": [
+    {
+      "id": "AX-001",
+      "title": "Absolute Conservation of Field Duality",
+      "status": "EXPLICIT",
+      "statement": "dM/dt = -dA/dt",
+      "software_contract": [
+        "Paired field changes must be equal and opposite.",
+        "No field information may be silently discarded."
+      ]
+    },
+    {
+      "id": "AX-002",
+      "title": "Gradient Autonomy",
+      "status": "EXPLICIT",
+      "statement": "D = -k grad(M)",
+      "software_contract": [
+        "Propagation derives from the local field gradient.",
+        "Particle identity must not determine direction."
+      ]
+    },
+    {
+      "id": "AX-003",
+      "title": "Information Preservation",
+      "status": "EXPLICIT",
+      "statement": "Locked structural information is preserved during reset and ejection.",
+      "software_contract": [
+        "Preserve before reset.",
+        "Audit before-state, packet-state, and after-state."
+      ]
+    },
+    {
+      "id": "AX-004",
+      "title": "Global Tensegrity Equilibrium",
+      "status": "EXPLICIT",
+      "statement": "sum_global sum_i(M_i + A_i) = 0",
+      "software_contract": [
+        "Report scalar and component-wise balance.",
+        "Do not hide unresolved interpretation differences."
+      ]
+    }
+  ]
+}

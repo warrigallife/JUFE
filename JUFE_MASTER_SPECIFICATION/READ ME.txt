@@ -1,0 +1,12 @@
+JUFE WORKING FOLDER
+
+1. Keep all four files together in this folder.
+2. Double-click "Start JUFE.command".
+3. If macOS blocks it, right-click it, choose Open, then Open again.
+4. Do not rename the Python files.
+
+Required files:
+- oldmate1(5).py
+- oldmate2(4).py
+- jufe_original_launcher.py
+- Start JUFE.command

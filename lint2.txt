@@ -1,0 +1,215 @@
+JUFE-Lint v0.1.0
+Scanned 14 Markdown file(s).
+
+/Users/warrigallife/Desktop/JUFE_CLEAN_VERIFIED/JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/00-Normative-Traceability-Matrix.md
+  WARNING JUFE023 line 7: Unknown document status: ' DRAFT'.
+  WARNING JUFE024 line 7: Unknown status value: ' DRAFT'.
+  WARNING JUFE001 line 37: File does not end with a newline.
+/Users/warrigallife/Desktop/JUFE_CLEAN_VERIFIED/JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/Chapter_1_Field_State.md
+  WARNING JUFE023 line 9: Unknown document status: ' DRAFT REFERENCE SPECIFICATION'.
+  WARNING JUFE024 line 9: Unknown status value: ' DRAFT REFERENCE SPECIFICATION'.
+  WARNING JUFE024 line 63: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE024 line 113: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE015 line 118: Duplicate heading; first seen on line 68: 'Definition'.
+  WARNING JUFE015 line 132: Duplicate heading; first seen on line 82: 'Role'.
+  WARNING JUFE015 line 142: Duplicate heading; first seen on line 92: 'Required properties'.
+  WARNING JUFE015 line 151: Duplicate heading; first seen on line 101: 'Used by'.
+  WARNING JUFE024 line 162: Unknown status value: ' PROVISIONAL'.
+  WARNING JUFE015 line 166: Duplicate heading; first seen on line 68: 'Definition'.
+  WARNING JUFE015 line 201: Duplicate heading; first seen on line 92: 'Required properties'.
+  WARNING JUFE024 line 227: Unknown status value: ' EXPLICIT EXPRESSION / PROVISIONAL NAME'.
+  WARNING JUFE015 line 231: Duplicate heading; first seen on line 68: 'Definition'.
+  WARNING JUFE015 line 249: Duplicate heading; first seen on line 179: 'Important limitation'.
+  WARNING JUFE015 line 262: Duplicate heading; first seen on line 82: 'Role'.
+  WARNING JUFE015 line 271: Duplicate heading; first seen on line 52: 'Unresolved'.
+  WARNING JUFE024 line 284: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE015 line 287: Duplicate heading; first seen on line 68: 'Definition'.
+  WARNING JUFE015 line 319: Duplicate heading; first seen on line 179: 'Important limitation'.
+  WARNING JUFE024 line 329: Unknown status value: ' EXPLICIT CONCEPT / PROVISIONAL SIX-ZERO REPRESENTATION'.
+  WARNING JUFE015 line 332: Duplicate heading; first seen on line 68: 'Definition'.
+  WARNING JUFE015 line 345: Duplicate heading; first seen on line 179: 'Important limitation'.
+  WARNING JUFE024 line 371: Unknown status value: ' PROVISIONAL'.
+  WARNING JUFE015 line 374: Duplicate heading; first seen on line 68: 'Definition'.
+  WARNING JUFE015 line 379: Duplicate heading; first seen on line 92: 'Required properties'.
+  WARNING JUFE024 line 392: Unknown status value: ' PROVISIONAL'.
+  WARNING JUFE015 line 395: Duplicate heading; first seen on line 68: 'Definition'.
+/Users/warrigallife/Desktop/JUFE_CLEAN_VERIFIED/JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/Chapter_2_Field_Lifecycle.md
+  ERROR   JUFE020 line 1: Missing metadata field: Version.
+  WARNING JUFE015 line 128: Duplicate heading; first seen on line 98: 'Definition'.
+  WARNING JUFE015 line 156: Duplicate heading; first seen on line 98: 'Definition'.
+  WARNING JUFE015 line 162: Duplicate heading; first seen on line 134: 'Purpose'.
+  WARNING JUFE015 line 186: Duplicate heading; first seen on line 98: 'Definition'.
+  WARNING JUFE015 line 192: Duplicate heading; first seen on line 134: 'Purpose'.
+  WARNING JUFE015 line 201: Duplicate heading; first seen on line 98: 'Definition'.
+  WARNING JUFE024 line 207: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE015 line 209: Duplicate heading; first seen on line 134: 'Purpose'.
+  WARNING JUFE024 line 217: Unknown status value: ' DERIVED'.
+  WARNING JUFE015 line 219: Duplicate heading; first seen on line 140: 'Behaviour'.
+  WARNING JUFE024 line 230: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE015 line 232: Duplicate heading; first seen on line 149: 'Engineering Constraint'.
+  WARNING JUFE024 line 236: Unknown status value: ' PROVISIONAL'.
+  WARNING JUFE015 line 240: Duplicate heading; first seen on line 98: 'Definition'.
+  WARNING JUFE024 line 246: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE015 line 248: Duplicate heading; first seen on line 134: 'Purpose'.
+  WARNING JUFE024 line 254: Unknown status value: ' DERIVED'.
+  WARNING JUFE015 line 256: Duplicate heading; first seen on line 140: 'Behaviour'.
+  WARNING JUFE024 line 265: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE015 line 267: Duplicate heading; first seen on line 113: 'Engineering Interpretation'.
+  WARNING JUFE024 line 273: Unknown status value: ' UNRESOLVED'.
+  WARNING JUFE015 line 277: Duplicate heading; first seen on line 98: 'Definition'.
+  WARNING JUFE024 line 283: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE015 line 285: Duplicate heading; first seen on line 134: 'Purpose'.
+  WARNING JUFE024 line 289: Unknown status value: ' DERIVED'.
+  WARNING JUFE015 line 291: Duplicate heading; first seen on line 140: 'Behaviour'.
+  WARNING JUFE024 line 300: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE024 line 342: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE024 line 358: Unknown status value: ' PROVISIONAL'.
+  WARNING JUFE024 line 372: Unknown status value: ' DERIVED'.
+  WARNING JUFE024 line 387: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE024 line 399: Unknown status value: ' DERIVED'.
+  WARNING JUFE024 line 415: Unknown status value: ' UNRESOLVED'.
+/Users/warrigallife/Desktop/JUFE_CLEAN_VERIFIED/JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/Chapter_3_Gradient_Mechanics.md
+  ERROR   JUFE020 line 1: Missing metadata field: Version.
+  WARNING JUFE024 line 64: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE024 line 69: Unknown status value: ' DERIVED'.
+  WARNING JUFE024 line 78: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE015 line 82: Duplicate heading; first seen on line 59: 'Definition'.
+  WARNING JUFE024 line 87: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE015 line 89: Duplicate heading; first seen on line 66: 'Purpose'.
+  WARNING JUFE024 line 93: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE024 line 99: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE024 line 105: Unknown status value: ' PROVISIONAL'.
+  WARNING JUFE015 line 109: Duplicate heading; first seen on line 59: 'Definition'.
+  WARNING JUFE024 line 114: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE015 line 116: Duplicate heading; first seen on line 66: 'Purpose'.
+  WARNING JUFE024 line 120: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE015 line 122: Duplicate heading; first seen on line 95: 'Behaviour'.
+  WARNING JUFE024 line 128: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE024 line 133: Unknown status value: ' DERIVED'.
+  WARNING JUFE015 line 137: Duplicate heading; first seen on line 59: 'Definition'.
+  WARNING JUFE024 line 142: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE015 line 144: Duplicate heading; first seen on line 66: 'Purpose'.
+  WARNING JUFE024 line 147: Unknown status value: ' DERIVED'.
+  WARNING JUFE015 line 149: Duplicate heading; first seen on line 95: 'Behaviour'.
+  WARNING JUFE024 line 156: Unknown status value: ' EXPLICIT'.
+/Users/warrigallife/Desktop/JUFE_CLEAN_VERIFIED/JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/Chapter_4_Coupled_Evolution.md
+  ERROR   JUFE020 line 1: Missing metadata field: Version.
+  WARNING JUFE023 line 6: Unknown document status: ' TECHNICALLY COMPLETE'.
+  WARNING JUFE024 line 6: Unknown status value: ' TECHNICALLY COMPLETE'.
+  WARNING JUFE024 line 81: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE024 line 87: Unknown status value: ' DERIVED'.
+  WARNING JUFE024 line 99: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE024 line 112: Unknown status value: ' UNRESOLVED'.
+  WARNING JUFE015 line 116: Duplicate heading; first seen on line 71: 'Definition'.
+  WARNING JUFE024 line 121: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE015 line 123: Duplicate heading; first seen on line 83: 'Purpose'.
+  WARNING JUFE024 line 126: Unknown status value: ' DERIVED'.
+  WARNING JUFE015 line 128: Duplicate heading; first seen on line 89: 'Behaviour'.
+  WARNING JUFE024 line 136: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE015 line 138: Duplicate heading; first seen on line 101: 'Outstanding Questions'.
+  WARNING JUFE024 line 149: Unknown status value: ' UNRESOLVED'.
+  WARNING JUFE015 line 153: Duplicate heading; first seen on line 71: 'Definition'.
+  WARNING JUFE024 line 161: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE015 line 163: Duplicate heading; first seen on line 83: 'Purpose'.
+  WARNING JUFE024 line 166: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE015 line 168: Duplicate heading; first seen on line 89: 'Behaviour'.
+  WARNING JUFE024 line 183: Unknown status value: ' DERIVED'.
+  WARNING JUFE024 line 185: Unknown status value: ' DERIVED'.
+  WARNING JUFE015 line 187: Duplicate heading; first seen on line 101: 'Outstanding Questions'.
+  WARNING JUFE024 line 198: Unknown status value: ' UNRESOLVED'.
+  WARNING JUFE015 line 202: Duplicate heading; first seen on line 71: 'Definition'.
+  WARNING JUFE024 line 206: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE015 line 208: Duplicate heading; first seen on line 83: 'Purpose'.
+  WARNING JUFE024 line 211: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE015 line 213: Duplicate heading; first seen on line 89: 'Behaviour'.
+  WARNING JUFE024 line 217: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE015 line 219: Duplicate heading; first seen on line 101: 'Outstanding Questions'.
+  WARNING JUFE024 line 230: Unknown status value: ' UNRESOLVED'.
+  WARNING JUFE015 line 234: Duplicate heading; first seen on line 71: 'Definition'.
+  WARNING JUFE024 line 244: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE015 line 246: Duplicate heading; first seen on line 83: 'Purpose'.
+  WARNING JUFE024 line 249: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE015 line 251: Duplicate heading; first seen on line 89: 'Behaviour'.
+  WARNING JUFE024 line 265: Unknown status value: ' PROVISIONAL'.
+  WARNING JUFE015 line 267: Duplicate heading; first seen on line 101: 'Outstanding Questions'.
+  WARNING JUFE024 line 277: Unknown status value: ' UNRESOLVED'.
+  WARNING JUFE015 line 281: Duplicate heading; first seen on line 71: 'Definition'.
+  WARNING JUFE024 line 288: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE015 line 290: Duplicate heading; first seen on line 83: 'Purpose'.
+  WARNING JUFE024 line 294: Unknown status value: ' DERIVED'.
+  WARNING JUFE015 line 296: Duplicate heading; first seen on line 89: 'Behaviour'.
+  WARNING JUFE024 line 306: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE015 line 308: Duplicate heading; first seen on line 101: 'Outstanding Questions'.
+  WARNING JUFE024 line 317: Unknown status value: ' UNRESOLVED'.
+  WARNING JUFE024 line 331: Unknown status value: ' PROVISIONAL'.
+  WARNING JUFE024 line 344: Unknown status value: ' PROVISIONAL'.
+  WARNING JUFE024 line 362: Unknown status value: ' PROVISIONAL'.
+/Users/warrigallife/Desktop/JUFE_CLEAN_VERIFIED/JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/Chapter_5.6_Non-Truncating_Ejection.md
+  WARNING JUFE021 line 3: Non-canonical chapter document ID: ' JUFE-V3-CH05.6'.
+  WARNING JUFE023 line 7: Unknown document status: ' DRAFT'.
+  WARNING JUFE024 line 7: Unknown status value: ' DRAFT'.
+/Users/warrigallife/Desktop/JUFE_CLEAN_VERIFIED/JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/Chapter_5_Phase_Lock.md
+  WARNING JUFE021 line 3: Non-canonical chapter document ID: ' JUFE-V3-CH06'.
+  WARNING JUFE023 line 7: Unknown document status: ' DRAFT'.
+  WARNING JUFE024 line 7: Unknown status value: ' DRAFT'.
+  ERROR   JUFE016 line 21: Heading chapter number does not match document chapter 6.
+  ERROR   JUFE016 line 33: Heading chapter number does not match document chapter 6.
+  ERROR   JUFE016 line 54: Heading chapter number does not match document chapter 6.
+  ERROR   JUFE016 line 68: Heading chapter number does not match document chapter 6.
+  ERROR   JUFE016 line 78: Heading chapter number does not match document chapter 6.
+  WARNING JUFE024 line 84: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE024 line 90: Unknown status value: ' DERIVED'.
+  WARNING JUFE024 line 96: Unknown status value: ' EXPLICIT'.
+  WARNING JUFE024 line 102: Unknown status value: ' UNRESOLVED'.
+  ERROR   JUFE016 line 110: Heading chapter number does not match document chapter 6.
+  WARNING JUFE015 line 120: Duplicate heading; first seen on line 104: 'Status'.
+  ERROR   JUFE016 line 128: Heading chapter number does not match document chapter 6.
+  WARNING JUFE015 line 138: Duplicate heading; first seen on line 104: 'Status'.
+  ERROR   JUFE016 line 146: Heading chapter number does not match document chapter 6.
+  WARNING JUFE015 line 156: Duplicate heading; first seen on line 104: 'Status'.
+  ERROR   JUFE016 line 162: Heading chapter number does not match document chapter 6.
+  ERROR   JUFE016 line 179: Heading chapter number does not match document chapter 6.
+  ERROR   JUFE016 line 192: Heading chapter number does not match document chapter 6.
+  ERROR   JUFE016 line 203: Heading chapter number does not match document chapter 6.
+  WARNING JUFE024 line 213: Unknown status value: ' PROVISIONAL'.
+/Users/warrigallife/Desktop/JUFE_CLEAN_VERIFIED/JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/Chapter_5_Post_Phase_Lock_Mechanics.md
+  ERROR   JUFE020 line 1: Missing metadata field: Document ID.
+  WARNING JUFE023 line 4: Unknown document status: ' DRAFT — REVIEW COMPLETE'.
+  WARNING JUFE024 line 4: Unknown status value: ' DRAFT — REVIEW COMPLETE'.
+  WARNING JUFE015 line 161: Duplicate heading; first seen on line 94: 'Unresolved representation'.
+  WARNING JUFE015 line 186: Duplicate heading; first seen on line 154: 'Explicit role'.
+/Users/warrigallife/Desktop/JUFE_CLEAN_VERIFIED/JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/Chapter_6_Global_Tensegrity_Equilibrium_Matrix.md
+  ERROR   JUFE020 line 1: Missing metadata field: Version.
+  WARNING JUFE021 line 3: Non-canonical chapter document ID: ' JUFE-V3-CH06'.
+  WARNING JUFE023 line 9: Unknown document status: ' TECHNICALLY COMPLETE'.
+  WARNING JUFE024 line 9: Unknown status value: ' TECHNICALLY COMPLETE'.
+/Users/warrigallife/Desktop/JUFE_CLEAN_VERIFIED/JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/Chapter_7_Unified_ABTM_Field_Equations.md
+  WARNING JUFE021 line 3: Non-canonical chapter document ID: ' JUFE-V3-CH07'.
+  WARNING JUFE023 line 7: Unknown document status: ' DRAFT'.
+  WARNING JUFE024 line 7: Unknown status value: ' DRAFT'.
+  WARNING JUFE015 line 64: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 98: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 134: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 209: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 267: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 317: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 368: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 423: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 454: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 506: Duplicate heading; first seen on line 14: 'Dependencies'.
+  WARNING JUFE015 line 514: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 570: Duplicate heading; first seen on line 14: 'Dependencies'.
+  WARNING JUFE015 line 578: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 626: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 660: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 694: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 730: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 793: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 839: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 876: Duplicate heading; first seen on line 35: 'Specification Status'.
+  WARNING JUFE015 line 896: Duplicate heading; first seen on line 35: 'Specification Status'.
+/Users/warrigallife/Desktop/JUFE_CLEAN_VERIFIED/JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/SPECIFICATION_INDEX.md
+  WARNING JUFE023 line 6: Unknown document status: 'DRAFT REFERENCE SPECIFICATION'.
+  WARNING JUFE024 line 6: Unknown status value: 'DRAFT REFERENCE SPECIFICATION'.
+
+Summary: 17 error(s), 182 warning(s).

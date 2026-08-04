@@ -1,0 +1,11 @@
+{
+  "package": "JUFE_ABTM_SPECIFICATION_LAYER",
+  "version": "0.1.0",
+  "files": {
+    "abtm_specification.py": "Formal definitions, axioms, rules, parameters, grid contract.",
+    "abtm_specification_registry.py": "Active query and JSON export registry.",
+    "abtm_specification_validator.py": "Executable validation hooks for defined invariants."
+  },
+  "core_files_modified": false,
+  "scope_note": "This layer formalizes the supplied manuscript and original code. It does not claim empirical validation of the physical theory."
+}

@@ -1,0 +1,19 @@
+{
+  "project": "JUFE / ABTM Project Foundation",
+  "version": "0.1.0",
+  "created_files": [
+    "jufe_64_grid_mapper.py",
+    "oldmate1(5).py",
+    "abtm_expansion.py",
+    "CHANGELOG.md"
+  ],
+  "core_files_modified": false,
+  "status": "FOUNDATION_ACTIVE",
+  "next_priority": [
+    "Resolve 64-cell mapping",
+    "Define third-axis representation",
+    "Define dominance threshold",
+    "Define phase-lock tolerance provenance",
+    "Derive or document Z6 trace relationship"
+  ]
+}

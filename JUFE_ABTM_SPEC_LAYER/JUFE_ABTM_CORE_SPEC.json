@@ -1,0 +1,522 @@
+{
+  "name": "JUFE / ABTM Core Specification",
+  "version": "0.1.0",
+  "variables": {
+    "M": {
+      "symbol": "M",
+      "meaning": "Inward compressive field",
+      "shape": "3-component vector per local field state: (Mx, My, Mz)",
+      "units": null,
+      "status": "explicit",
+      "notes": "",
+      "source_section": "Local Gradient Dominance"
+    },
+    "A": {
+      "symbol": "A",
+      "meaning": "Outward repulsive field",
+      "shape": "3-component vector per local field state: (Ax, Ay, Az)",
+      "units": null,
+      "status": "explicit",
+      "notes": "",
+      "source_section": "Local Gradient Dominance"
+    },
+    "Psi": {
+      "symbol": "Psi",
+      "meaning": "Combined manifold state",
+      "shape": "6-component local state: (Mx, My, Mz, Ax, Ay, Az)",
+      "units": null,
+      "status": "explicit",
+      "notes": "This is the least-assumptive software composition of M in R3 and A in R3.",
+      "source_section": ""
+    },
+    "D": {
+      "symbol": "D",
+      "meaning": "Instantaneous propagation vector",
+      "shape": "3-component vector",
+      "units": null,
+      "status": "explicit",
+      "notes": "",
+      "source_section": ""
+    },
+    "S": {
+      "symbol": "S",
+      "meaning": "Sensitivity matrix mapping external perturbations to manifold response",
+      "shape": "m x n numerical matrix",
+      "units": null,
+      "status": "explicit",
+      "notes": "",
+      "source_section": ""
+    },
+    "delta_E": {
+      "symbol": "delta_E",
+      "meaning": "External perturbation vector",
+      "shape": "n-component vector",
+      "units": null,
+      "status": "explicit",
+      "notes": "",
+      "source_section": ""
+    },
+    "T_total": {
+      "symbol": "T_total",
+      "meaning": "Total tensegrity-stress tensor",
+      "shape": "square rank-2 tensor or spatial tensor field",
+      "units": null,
+      "status": "explicit",
+      "notes": "",
+      "source_section": ""
+    },
+    "C_jam": {
+      "symbol": "C_jam",
+      "meaning": "Jammed local field cell",
+      "shape": "cell state object",
+      "units": null,
+      "status": "explicit",
+      "notes": "",
+      "source_section": ""
+    },
+    "Phi_ejected": {
+      "symbol": "Phi_ejected",
+      "meaning": "Preserved structural information ejected after phase lock",
+      "shape": "same information content as source structural state",
+      "units": null,
+      "status": "explicit",
+      "notes": "",
+      "source_section": ""
+    },
+    "Omega_T": {
+      "symbol": "Omega_T",
+      "meaning": "Master toroidal phase-lock frequency",
+      "shape": "scalar",
+      "units": null,
+      "status": "unresolved",
+      "notes": "Meaning supplied; numerical units and operational formula remain unresolved.",
+      "source_section": ""
+    }
+  },
+  "rules": {
+    "DEF-M6-001": {
+      "rule_id": "DEF-M6-001",
+      "title": "Six-component local manifold state",
+      "kind": "definition",
+      "status": "explicit",
+      "mathematical_form": "Psi = (Mx, My, Mz, Ax, Ay, Az)",
+      "description": "A local manifold state couples a three-component compressive field and a three-component repulsive field.",
+      "required_inputs": [
+        "M",
+        "A"
+      ],
+      "outputs": [
+        "Psi"
+      ],
+      "software_contract": [
+        "M must contain exactly three finite numerical components.",
+        "A must contain exactly three finite numerical components.",
+        "Psi must preserve component order and values."
+      ],
+      "unresolved_items": [],
+      "source_section": "Intersecting Space-Field Matrix M^6"
+    },
+    "AX-GRAD-001": {
+      "rule_id": "AX-GRAD-001",
+      "title": "Gradient autonomy",
+      "kind": "axiom",
+      "status": "explicit",
+      "mathematical_form": "D = -k grad(M)",
+      "description": "Propagation is determined by the local compressive-field gradient rather than particle identity or hardcoded trajectories.",
+      "required_inputs": [
+        "M spatial field",
+        "coupling_constant_k",
+        "spatial spacing"
+      ],
+      "outputs": [
+        "D"
+      ],
+      "software_contract": [
+        "Propagation direction must be computed from the supplied gradient.",
+        "No branch may select direction from matter/antimatter labels."
+      ],
+      "unresolved_items": [
+        "Boundary conditions for gradient evaluation.",
+        "Exact spatial embedding of the third axis in an 8 x 8 representation."
+      ],
+      "source_section": "1.1 Mathematical Formulation of the Gradient Field"
+    },
+    "INV-DUAL-001": {
+      "rule_id": "INV-DUAL-001",
+      "title": "Absolute conservation of field duality",
+      "kind": "invariant",
+      "status": "explicit",
+      "mathematical_form": "dM/dt = -dA/dt",
+      "description": "Changes in compressive and repulsive fields must be equal and opposite.",
+      "required_inputs": [
+        "M",
+        "A",
+        "dM/dt",
+        "time_step"
+      ],
+      "outputs": [
+        "M_next",
+        "A_next",
+        "conservation_residual"
+      ],
+      "software_contract": [
+        "The update must preserve dM + dA = 0 within tolerance.",
+        "No field information may be silently discarded."
+      ],
+      "unresolved_items": [
+        "Numerical integration scheme beyond an explicit first-order step."
+      ],
+      "source_section": "2.1 The Boundary Jam Equation"
+    },
+    "INV-GLOBAL-001": {
+      "rule_id": "INV-GLOBAL-001",
+      "title": "Global tensegrity equilibrium",
+      "kind": "invariant",
+      "status": "explicit",
+      "mathematical_form": "sum_global sum_i(M_i + A_i) = 0",
+      "description": "The global scalar field balance remains zero.",
+      "required_inputs": [
+        "all local M states",
+        "all local A states"
+      ],
+      "outputs": [
+        "scalar_balance",
+        "component_balance",
+        "balanced"
+      ],
+      "software_contract": [
+        "Calculate both scalar and component-wise totals.",
+        "Report both interpretations rather than silently choosing one."
+      ],
+      "unresolved_items": [
+        "Whether component-wise zero balance is required or only scalar zero balance."
+      ],
+      "source_section": "3. Global Tensegrity Equilibrium Matrix"
+    },
+    "TR-PHASE-001": {
+      "rule_id": "TR-PHASE-001",
+      "title": "Phase-lock condition",
+      "kind": "transition",
+      "status": "explicit",
+      "mathematical_form": "lim_(t->t_lock)(M(t) - A(t)) = 0",
+      "description": "A local cell enters phase lock when compressive and repulsive field states converge.",
+      "required_inputs": [
+        "M",
+        "A",
+        "phase_lock_tolerance"
+      ],
+      "outputs": [
+        "phase_error",
+        "locked"
+      ],
+      "software_contract": [
+        "Calculate the residual M - A.",
+        "Use a declared tolerance and include it in every audit."
+      ],
+      "unresolved_items": [],
+      "source_section": "2.2 Phase-Lock and Ejection Mechanics"
+    },
+    "TR-JAM-001": {
+      "rule_id": "TR-JAM-001",
+      "title": "Boundary jam",
+      "kind": "transition",
+      "status": "explicit",
+      "mathematical_form": "jammed = (tension >= capacity) AND (resistance_gradient >= threshold)",
+      "description": "A local cell jams when maximum tension and limiting external resistance occur together.",
+      "required_inputs": [
+        "tension",
+        "tension_capacity",
+        "resistance_gradient_norm",
+        "resistance_threshold"
+      ],
+      "outputs": [
+        "jammed"
+      ],
+      "software_contract": [
+        "Both conditions must pass.",
+        "Thresholds must be externally declared and audited."
+      ],
+      "unresolved_items": [
+        "Numerical tension capacity.",
+        "Finite approximation of infinite resistance."
+      ],
+      "source_section": "2.1 The Boundary Jam Equation"
+    },
+    "TR-EJECT-001": {
+      "rule_id": "TR-EJECT-001",
+      "title": "Non-truncating harmonic ejection",
+      "kind": "transition",
+      "status": "explicit",
+      "mathematical_form": "C_jam -> Psi_0 + Phi_ejected",
+      "description": "After phase lock, the local coordinate resets while structural information is preserved in an ejected packet.",
+      "required_inputs": [
+        "jammed cell state",
+        "phase_lock result"
+      ],
+      "outputs": [
+        "Psi_0",
+        "Phi_ejected"
+      ],
+      "software_contract": [
+        "Deep-copy or serialize structural information before reset.",
+        "Reset source coordinate only after preservation succeeds.",
+        "Audit before-state, packet-state, and after-state hashes."
+      ],
+      "unresolved_items": [
+        "Destination and reinsertion rules for the clean-cell pool."
+      ],
+      "source_section": "2.2 Phase-Lock and Ejection Mechanics"
+    },
+    "EQ-SENS-001": {
+      "rule_id": "EQ-SENS-001",
+      "title": "Sensitivity response",
+      "kind": "equation",
+      "status": "explicit",
+      "mathematical_form": "delta_Psi = S delta_E",
+      "description": "External perturbations modify the manifold through a sensitivity matrix.",
+      "required_inputs": [
+        "S",
+        "delta_E"
+      ],
+      "outputs": [
+        "delta_Psi"
+      ],
+      "software_contract": [
+        "Matrix columns must equal perturbation-vector length.",
+        "Preserve units metadata when supplied."
+      ],
+      "unresolved_items": [],
+      "source_section": "Unified ABTM Field Equations, Harmonic Coupling and Sensitivity"
+    },
+    "TR-BIF-001": {
+      "rule_id": "TR-BIF-001",
+      "title": "Bifurcation detection",
+      "kind": "transition",
+      "status": "explicit",
+      "mathematical_form": "det(S) -> 0",
+      "description": "A near-singular sensitivity matrix indicates transition toward a nonlinear regime.",
+      "required_inputs": [
+        "S",
+        "bifurcation_threshold"
+      ],
+      "outputs": [
+        "determinant",
+        "near_bifurcation"
+      ],
+      "software_contract": [
+        "S must be square.",
+        "Report determinant and threshold together."
+      ],
+      "unresolved_items": [
+        "The physically justified bifurcation threshold."
+      ],
+      "source_section": "Unified ABTM Field Equations, Harmonic Coupling and Sensitivity"
+    },
+    "INV-Z6-001": {
+      "rule_id": "INV-Z6-001",
+      "title": "Original Z6 trace residue",
+      "kind": "invariant",
+      "status": "explicit",
+      "mathematical_form": "sigma = Trace(Psi_barrier) mod 6",
+      "description": "The supplied original engine returns stable when the barrier-matrix trace has zero residue modulo six.",
+      "required_inputs": [
+        "Psi_barrier matrix"
+      ],
+      "outputs": [
+        "trace",
+        "sigma",
+        "stable"
+      ],
+      "software_contract": [
+        "Input must be a two-dimensional numerical matrix.",
+        "Return stable only when sigma equals zero.",
+        "Do not present this rule as equivalent to every broader ABTM invariant."
+      ],
+      "unresolved_items": [
+        "Derivation connecting this matrix invariant to the 64-cell M^6 field."
+      ],
+      "source_section": "Original ABTM_Engine source code"
+    },
+    "GRID-64-001": {
+      "rule_id": "GRID-64-001",
+      "title": "64-cell spatial lattice",
+      "kind": "software_contract",
+      "status": "provisional_mapping",
+      "mathematical_form": "8 x 8 = 64 spatial cells",
+      "description": "The software supports a fixed 64-cell frame while preserving uncertainty about how source observations populate cells.",
+      "required_inputs": [
+        "cell mapping rule",
+        "cell states"
+      ],
+      "outputs": [
+        "8 x 8 field frame"
+      ],
+      "software_contract": [
+        "Every cell has a stable coordinate.",
+        "Empty and overflow states must be explicit.",
+        "Mapping must be audited and never silently rearranged."
+      ],
+      "unresolved_items": [
+        "Whether each cell stores one scalar, one subgroup, or one six-component local manifold state.",
+        "How the z spatial axis is encoded.",
+        "Neighbour topology and boundary conditions."
+      ],
+      "source_section": "User-specified 64-grid architecture"
+    }
+  },
+  "parameters": {
+    "equilibrium_tolerance": {
+      "name": "equilibrium_tolerance",
+      "meaning": "Numerical tolerance for zero-valued conservation residuals",
+      "default": 1e-09,
+      "status": "numerical_convention",
+      "constraints": "finite and >= 0",
+      "source_basis": "Software cannot test exact floating-point equality robustly."
+    },
+    "phase_lock_tolerance": {
+      "name": "phase_lock_tolerance",
+      "meaning": "Numerical tolerance for ||M - A|| approaching zero",
+      "default": 1e-09,
+      "status": "numerical_convention",
+      "constraints": "finite and >= 0",
+      "source_basis": "The manuscript specifies a limit, not a finite software threshold."
+    },
+    "dominance_threshold": {
+      "name": "dominance_threshold",
+      "meaning": "Threshold representing ||M|| much greater than ||A||",
+      "default": null,
+      "status": "unresolved",
+      "constraints": "finite and > 1 when supplied",
+      "source_basis": "The manuscript uses the qualitative relation 'much greater than'."
+    },
+    "resistance_threshold": {
+      "name": "resistance_threshold",
+      "meaning": "Finite software threshold approximating an infinite resistance gradient",
+      "default": null,
+      "status": "unresolved",
+      "constraints": "finite and >= 0 when supplied",
+      "source_basis": "The manuscript states gradient approaches infinity."
+    },
+    "tension_capacity": {
+      "name": "tension_capacity",
+      "meaning": "Maximum local cell tension capability",
+      "default": null,
+      "status": "unresolved",
+      "constraints": "finite and >= 0 when supplied",
+      "source_basis": "Maximum tension is named but not numerically fixed."
+    },
+    "coupling_constant_k": {
+      "name": "coupling_constant_k",
+      "meaning": "Coupling coefficient in D = -k grad(M)",
+      "default": 1.0,
+      "status": "numerical_convention",
+      "constraints": "finite",
+      "source_basis": "Equation supplies k but not its value or units."
+    },
+    "time_step": {
+      "name": "time_step",
+      "meaning": "Discrete integration interval for coupled M/A evolution",
+      "default": null,
+      "status": "unresolved",
+      "constraints": "finite and > 0 when supplied",
+      "source_basis": "Differential equation supplied without a numerical integration interval."
+    }
+  },
+  "grid": {
+    "rows": 8,
+    "columns": 8,
+    "cell_count": 64,
+    "cell_state_components": [
+      "Mx",
+      "My",
+      "Mz",
+      "Ax",
+      "Ay",
+      "Az"
+    ],
+    "full_frame_value_count": 384,
+    "spatial_mapping_status": "provisional_mapping",
+    "notes": [
+      "A six-component cell state follows directly from M in R3 and A in R3.",
+      "The assignment of raw user sequences to these cell states remains unresolved.",
+      "The 8 x 8 display is spatially two-dimensional while gradient equations are three-dimensional."
+    ]
+  },
+  "unresolved": {
+    "rules": {
+      "AX-GRAD-001": [
+        "Boundary conditions for gradient evaluation.",
+        "Exact spatial embedding of the third axis in an 8 x 8 representation."
+      ],
+      "INV-DUAL-001": [
+        "Numerical integration scheme beyond an explicit first-order step."
+      ],
+      "INV-GLOBAL-001": [
+        "Whether component-wise zero balance is required or only scalar zero balance."
+      ],
+      "TR-JAM-001": [
+        "Numerical tension capacity.",
+        "Finite approximation of infinite resistance."
+      ],
+      "TR-EJECT-001": [
+        "Destination and reinsertion rules for the clean-cell pool."
+      ],
+      "TR-BIF-001": [
+        "The physically justified bifurcation threshold."
+      ],
+      "INV-Z6-001": [
+        "Derivation connecting this matrix invariant to the 64-cell M^6 field."
+      ],
+      "GRID-64-001": [
+        "Whether each cell stores one scalar, one subgroup, or one six-component local manifold state.",
+        "How the z spatial axis is encoded.",
+        "Neighbour topology and boundary conditions."
+      ]
+    },
+    "parameters": {
+      "dominance_threshold": {
+        "name": "dominance_threshold",
+        "meaning": "Threshold representing ||M|| much greater than ||A||",
+        "default": null,
+        "status": "unresolved",
+        "constraints": "finite and > 1 when supplied",
+        "source_basis": "The manuscript uses the qualitative relation 'much greater than'."
+      },
+      "resistance_threshold": {
+        "name": "resistance_threshold",
+        "meaning": "Finite software threshold approximating an infinite resistance gradient",
+        "default": null,
+        "status": "unresolved",
+        "constraints": "finite and >= 0 when supplied",
+        "source_basis": "The manuscript states gradient approaches infinity."
+      },
+      "tension_capacity": {
+        "name": "tension_capacity",
+        "meaning": "Maximum local cell tension capability",
+        "default": null,
+        "status": "unresolved",
+        "constraints": "finite and >= 0 when supplied",
+        "source_basis": "Maximum tension is named but not numerically fixed."
+      },
+      "time_step": {
+        "name": "time_step",
+        "meaning": "Discrete integration interval for coupled M/A evolution",
+        "default": null,
+        "status": "unresolved",
+        "constraints": "finite and > 0 when supplied",
+        "source_basis": "Differential equation supplied without a numerical integration interval."
+      }
+    },
+    "variables": {
+      "Omega_T": {
+        "symbol": "Omega_T",
+        "meaning": "Master toroidal phase-lock frequency",
+        "shape": "scalar",
+        "units": null,
+        "status": "unresolved",
+        "notes": "Meaning supplied; numerical units and operational formula remain unresolved.",
+        "source_section": ""
+      }
+    }
+  }
+}
