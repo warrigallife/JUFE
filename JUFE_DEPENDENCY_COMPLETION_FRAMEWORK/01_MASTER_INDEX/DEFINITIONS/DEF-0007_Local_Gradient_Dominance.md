@@ -1,6 +1,6 @@
-# DEF-0019 — Local Gradient Dominance
+# DEF-0007 — Local Gradient Dominance
 
-**Identifier:** DEF-0019
+**Identifier:** DEF-0007
 
 **Status:** ACTIVE
 
@@ -10,7 +10,7 @@
 
 This definition records the manuscript concept of **Local Gradient
 Dominance** using only the evidence documented in
-**EVIDENCE-DEF-0019 — Local Gradient Dominance**.
+**EVIDENCE-DEF-0007 — Local Gradient Dominance**.
 
 ---
 
@@ -94,7 +94,7 @@ UNRESOLVED
 
 Supporting Evidence:
 
-EVIDENCE-DEF-0019 — Local Gradient Dominance
+EVIDENCE-DEF-0007 — Local Gradient Dominance
 
 Primary Manuscript Source:
 

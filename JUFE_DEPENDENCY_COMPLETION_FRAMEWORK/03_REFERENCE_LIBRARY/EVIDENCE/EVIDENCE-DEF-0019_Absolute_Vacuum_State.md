@@ -1,4 +1,4 @@
-# Evidence — DEF-0019: Harmonic Packet
+# Evidence — DEF-0019: Absolute Vacuum State
 
 **Identifier:** EVIDENCE-DEF-0019
 
@@ -9,7 +9,7 @@
 # Purpose
 
 This document records only the manuscript evidence supporting
-**DEF-0019 — Harmonic Packet**.
+**DEF-0019 — Absolute Vacuum State**.
 
 No engineering interpretation is introduced within this file.
 
@@ -32,41 +32,17 @@ Section:
 
 ## Statement 1
 
-The manuscript states that the stabilized structural matrix is ejected as a harmonic packet into the clean cell pool.
-
-
----
-
-## Statement 3
-
-The manuscript presents the transition
-
-\[
-C_{\mathrm{jam}}
-\xrightarrow{t_{\mathrm{lock}}}
-\Psi_{0}
-+
-\mathbf{\Phi}_{\mathrm{ejected}}
-\]
-
----
-
-## Statement 4
-
-The manuscript states that
-\(\mathbf{\Phi}_{\mathrm{ejected}}\)
-represents the un-truncated structural information distributed to the
-network.
+The manuscript states that the localized boundary coordinate is reset to an absolute vacuum state (0).
 
 ---
 
 # Explicit Concepts
 
+- Absolute Vacuum State
+- Localized Boundary Coordinate
+- Clean Cell Pool
 - Harmonic Packet
 - Stabilized Structural Matrix
-- Boundary Node
-- Clean Cell Pool
-- \(\mathbf{\Phi}_{\mathrm{ejected}}\)
 
 ---
 
@@ -74,11 +50,11 @@ network.
 
 Within this repository review, the manuscript does not explicitly define:
 
-- the mathematical structure of the harmonic packet;
-- its dimensionality;
-- its propagation mechanism;
+- the mathematical structure of the absolute vacuum state;
+- the mechanism by which the reset occurs;
+- the physical interpretation of the vacuum state;
 - its computational implementation;
-- its numerical representation.
+- its numerical representation beyond the notation "(0)".
 
 These remain outside the scope of this evidence file.
 

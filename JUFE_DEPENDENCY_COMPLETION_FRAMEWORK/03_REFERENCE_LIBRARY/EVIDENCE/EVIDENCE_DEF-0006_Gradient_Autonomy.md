@@ -1,6 +1,6 @@
-# Evidence — DEF-0018: Gradient Autonomy
+# Evidence — DEF-0006: Gradient Autonomy
 
-**Identifier:** EVIDENCE-DEF-0018
+**Identifier:** EVIDENCE-DEF-0006
 
 **Status:** ACTIVE
 
@@ -9,7 +9,8 @@
 # Purpose
 
 This document records only the manuscript evidence supporting
-DEF-0018 (Gradient Autonomy).
+
+DEF-0006 (Gradient Autonomy).
 
 No engineering interpretation is introduced within this file.
 
@@ -21,8 +22,6 @@ Document:
 
 Relational Unified Field Mechanics:
 Analytical Resolution of Critical Cosmological Anomalies
-
-Section:
 
 Section:
 
@@ -96,7 +95,9 @@ These remain outside the scope of this evidence file.
 # Repository Note
 
 This document records only the manuscript evidence supporting the repository
-definition **DEF-0018 — Gradient Autonomy**.
+definition 
+
+**DEF-0006 — Gradient Autonomy**.
 
 Interpretation belongs in the corresponding specification and
 definition files.

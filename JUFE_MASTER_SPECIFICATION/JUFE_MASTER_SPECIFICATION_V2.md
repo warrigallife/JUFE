@@ -57,8 +57,12 @@ An isolated local manifold in which internal M/A evolution continues after exter
 The state reached as M-A approaches the zero vector.
 
 ### DEF-014 — Cross-Axial Helical Deflection
-**Status:** REFERENCED_DEPENDENCY
-A mechanism cited as Lemma 3.1 that transfers asymmetric force into orthogonal phase dimensions; source statement not yet supplied.
+**Status:** EXPLICIT_WITH_UNRESOLVED_FORMALIZATION
+The manuscript-defined mechanism identified as Lemma 3.1 by which asymmetric field imbalance is redistributed into orthogonal phase dimensions during progression toward internal equilibrium and Phase Lock.
+
+The manuscript source and supporting evidence are now installed.
+
+The governing mathematical operator, orthogonal phase geometry, helical parameters, computational implementation, and relationship to the 64-cell architecture remain UNRESOLVED.
 
 ### DEF-015 — Orthogonal Phase Dimensions
 **Status:** PARTIALLY_DEFINED
@@ -85,8 +89,15 @@ The reset zero-state of a local coordinate after successful ejection.
 A boundary condition where field traffic is constrained and recycling/ejection occurs.
 
 ### DEF-021 — Phase-Cancellation Event
-**Status:** REFERENCED_DEPENDENCY
-A resolution process cited in relation to a Riemann Zeta zero; executable definition not yet supplied.
+**Status:** EXPLICIT_WITH_UNRESOLVED_FORMALIZATION
+
+The manuscript explicitly associates resolution of a local compressive spike with phase-cancellation at a Riemann Zeta zero.
+
+The existence of the manuscript proposition is therefore explicit.
+
+The exact phase-cancellation operator, relevant zeta-domain mapping, selected zero or zero family, quantity being cancelled, output-state transformation, conservation mapping, relationship to the Z6 and mod-7 structures, and validation criteria remain UNRESOLVED.
+
+The formalization boundary is maintained in `RIEMANN_PHASE_CANCELLATION_TEMPLATE.md`.
 
 ## Axioms
 ### AX-001 — Absolute Conservation of Field Duality
@@ -147,16 +158,38 @@ A resolution process cited in relation to a Riemann Zeta zero; executable defini
 
 ## Referenced Dependencies
 ### DEP-001 — Lemma 3.1: Cross-Axial Helical Deflection
-**Status:** MISSING_SOURCE
+**Status:** SOURCE_RESOLVED_FORMALIZATION_UNRESOLVED
+**Source:** EVIDENCE-LEMMA-3.1 — Cross-Axial Helical Deflection
+**Specification:** LEMMA-3.1 — Cross-Axial Helical Deflection
 **Required for:** TR-003, DEF-014
 
-### DEP-002 — Theorem 4.2: Information Cannot Be Clipped or Truncated
-**Status:** MISSING_SOURCE
+The manuscript source for Lemma 3.1 is installed and its proposition is recorded.
+
+The governing mathematical operator, derivation, orthogonal phase geometry, helical parameters, computational implementation, and relationship to the 64-cell architecture remain unresolved.
+
+### DEP-002 — Theorem 4.2: Non-Truncating Information Preservation
+
+**Status:** SOURCE_RESOLVED_FORMALIZATION_UNRESOLVED
+
+**Source:** THEOREM-4.2 — Non-Truncating Information Preservation
+
 **Required for:** AX-004, TR-004
 
+The manuscript source for Theorem 4.2 is installed and its non-truncation proposition is recorded.
+
+The mathematical proof, preservation mechanism, harmonic packet construction, transfer mechanics, and computational implementation remain unresolved.
+
 ### DEP-003 — Riemann Zeta zero phase-cancellation: Phase-Cancellation Rule
-**Status:** MISSING_DEFINITION
+**Status:** SOURCE_RESOLVED_FORMALIZATION_UNRESOLVED
 **Required for:** DEF-021
+
+The manuscript source for the phase-cancellation proposition is installed and recorded.
+
+The manuscript explicitly associates resolution of a compressive spike with phase-cancellation at a Riemann Zeta zero.
+
+The exact mathematical object, zeta-domain mapping, selected zero or zero family, cancellation operator, output-state transformation, conservation mapping, relationship to the Z6 and mod-7 structures, and validation criteria remain unresolved.
+
+The formalization boundary is maintained in `RIEMANN_PHASE_CANCELLATION_TEMPLATE.md`.
 
 ## Field-Cell State Machine
 
@@ -189,8 +222,9 @@ Model accounts for non-destructive horizon evaporation.
 - What integration method and time step govern coupled evolution?
 - What phase-lock tolerance is physically justified?
 - What are the clean-cell allocation and reinsertion rules?
-- What is the precise content of Lemma 3.1?
-- What is the precise content of Theorem 4.2?
+- What mathematical operator governs Cross-Axial Helical Deflection?
+- What is the geometry of the orthogonal phase dimensions?
+- What mathematical proof and formal preservation mechanism establish Theorem 4.2?
 - How is phase-cancellation at a Riemann Zeta zero defined?
 - How does the 64-cell/8×8 representation map to the coordinate-free 3D footprint?
 - How is the original Z6 trace diagnostic derived from the M^6 field?

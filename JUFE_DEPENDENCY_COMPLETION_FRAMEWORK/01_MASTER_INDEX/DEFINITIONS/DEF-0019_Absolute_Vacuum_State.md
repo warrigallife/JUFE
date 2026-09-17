@@ -1,6 +1,6 @@
-# DEF-0024 — Absolute Vacuum State
+# DEF-0019 — Absolute Vacuum State
 
-**Identifier:** DEF-0024
+**Identifier:** DEF-0019
 
 **Status:** ACTIVE
 
@@ -10,7 +10,7 @@
 
 This definition records the manuscript concept of the **Absolute Vacuum
 State** using only the evidence documented in
-**EVIDENCE-DEF-0024 — Absolute Vacuum State**.
+**EVIDENCE-DEF-0019 — Absolute Vacuum State**.
 
 ---
 
@@ -77,7 +77,7 @@ UNRESOLVED
 
 Supporting Evidence:
 
-EVIDENCE-DEF-0024 — Absolute Vacuum State
+EVIDENCE-DEF-0019 — Absolute Vacuum State
 
 Primary Manuscript Source:
 

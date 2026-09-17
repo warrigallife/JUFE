@@ -1,6 +1,6 @@
-# DEF-0018 — Gradient Autonomy
+# DEF-0006— Gradient Autonomy
 
-**Identifier:** DEF-0018
+**Identifier:** DEF-0006
 
 **Status:** ACTIVE
 
@@ -10,7 +10,7 @@
 
 This definition records the manuscript concept of **Gradient Autonomy**
 using only the evidence documented in
-**EVIDENCE-DEF-0018 — Gradient Autonomy**.
+**EVIDENCE-DEF-0006— Gradient Autonomy**.
 
 ---
 
@@ -89,7 +89,7 @@ UNRESOLVED
 
 Supporting Evidence:
 
-EVIDENCE-DEF-0018 — Gradient Autonomy
+EVIDENCE-DEF-0006— Gradient Autonomy
 
 Primary Manuscript Source:
 

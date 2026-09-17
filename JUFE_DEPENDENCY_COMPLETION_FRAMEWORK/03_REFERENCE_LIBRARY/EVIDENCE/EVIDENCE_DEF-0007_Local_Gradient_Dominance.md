@@ -1,6 +1,6 @@
-# Evidence — DEF-0019: Local Gradient Dominance
+# Evidence — DEF-0007: Local Gradient Dominance
 
-**Identifier:** EVIDENCE-DEF-0019
+**Identifier:** EVIDENCE-DEF-0007
 
 **Status:** ACTIVE
 
@@ -9,7 +9,7 @@
 # Purpose
 
 This document records only the manuscript evidence supporting the repository
-definition **DEF-0019 — Local Gradient Dominance**.
+definition **DEF-0007 — Local Gradient Dominance**.
 
 No engineering interpretation is introduced within this file.
 

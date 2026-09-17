@@ -85,8 +85,8 @@
     {
       "id": "DEF-014",
       "term": "Cross-Axial Helical Deflection",
-      "status": "REFERENCED_DEPENDENCY",
-      "definition": "A mechanism cited as Lemma 3.1 that transfers asymmetric force into orthogonal phase dimensions; source statement not yet supplied."
+      "status": "EXPLICIT_WITH_UNRESOLVED_FORMALIZATION",
+      "definition": "The manuscript-defined mechanism identified as Lemma 3.1 by which asymmetric field imbalance is redistributed into orthogonal phase dimensions during progression toward internal equilibrium and Phase Lock. The manuscript source and supporting evidence are now installed. The governing mathematical operator, orthogonal phase geometry, helical parameters, computational implementation, and relationship to the 64-cell architecture remain UNRESOLVED."
     },
     {
       "id": "DEF-015",
@@ -235,11 +235,13 @@
   ],
   "dependencies": [
     {
-      "id": "DEP-001",
-      "reference": "Lemma 3.1",
-      "name": "Cross-Axial Helical Deflection",
-      "status": "MISSING_SOURCE",
-      "required_for": [
+    "id": "DEP-001",
+    "reference": "Lemma 3.1",
+    "name": "Cross-Axial Helical Deflection",
+    "status": "SOURCE_RESOLVED_FORMALIZATION_UNRESOLVED",
+    "source": "EVIDENCE-LEMMA-3.1 — Cross-Axial Helical Deflection",
+    "specification": "LEMMA-3.1 — Cross-Axial Helical Deflection",
+    "required_for": [
         "TR-003",
         "DEF-014"
       ]
@@ -247,8 +249,10 @@
     {
       "id": "DEP-002",
       "reference": "Theorem 4.2",
-      "name": "Information Cannot Be Clipped or Truncated",
-      "status": "MISSING_SOURCE",
+      "name": "Non-Truncating Information Preservation",
+      "status": "SOURCE_RESOLVED_FORMALIZATION_UNRESOLVED",
+      "source": "THEOREM-4.2 — Non-Truncating Information Preservation",
+      "specification": "THEOREM-4.2 — Non-Truncating Information Preservation",
       "required_for": [
         "AX-004",
         "TR-004"
@@ -258,7 +262,9 @@
       "id": "DEP-003",
       "reference": "Riemann Zeta zero phase-cancellation",
       "name": "Phase-Cancellation Rule",
-      "status": "MISSING_DEFINITION",
+      "status": "SOURCE_RESOLVED_FORMALIZATION_UNRESOLVED",
+      "source": "Relational Unified Field Mechanics: Analytical Resolution of Critical Cosmological Anomalies",
+      "specification": "RIEMANN_PHASE_CANCELLATION_TEMPLATE.md",
       "required_for": [
         "DEF-021"
       ]

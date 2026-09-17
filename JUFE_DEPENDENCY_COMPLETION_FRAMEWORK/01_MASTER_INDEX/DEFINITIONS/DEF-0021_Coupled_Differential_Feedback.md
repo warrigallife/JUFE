@@ -32,7 +32,7 @@ The manuscript presents the coupled differential relationship
 as the mathematical expression associated with this feedback process.
 
 The manuscript then introduces the subsequent Phase-Lock sequence following
-this internal evolution. :contentReference[oaicite:1]{index=1}
+this internal evolution. 
 
 ---
 
