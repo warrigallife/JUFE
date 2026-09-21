@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from pathlib import Path
+
 from .kernel import JUFEKernel
 from .loader import SpecificationLoader
 from .parser import SpecificationParser
@@ -23,8 +25,18 @@ class JUFERuntime:
 
     def boot(self):
 
+        #
+        # Anchor to the repository root and use the directory's
+        # real name, so boot works on case-sensitive filesystems
+        # and from any working directory.
+        #
+
         return self.execute(
-            "specifications/SPEC-010.md"
+            str(
+                Path(__file__).resolve().parent.parent
+                / "Specifications"
+                / "SPEC-010.md"
+            )
         )
 
     def execute(
