@@ -24,7 +24,7 @@ class JUFERuntime:
     def boot(self):
 
         return self.execute(
-            "specifications/SPEC-010.md"
+            "Specifications/SPEC-010.md"
         )
 
     def execute(

@@ -48,17 +48,11 @@ class SpecificationValidator:
             )
 
         #
-        # Definitions
-        #
-
-        if not specification.definitions:
-
-            raise ValueError(
-                "Specification contains no executable definitions."
-            )
-
-        #
         # Duplicate definitions.
+        #
+        # SPEC-001 lists "Definitions" as an OPTIONAL specification
+        # section, so an empty definitions list is not itself a
+        # failure condition; only duplicates among any that exist are.
         #
 
         if len(specification.definitions) != len(
