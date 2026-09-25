@@ -23,3 +23,27 @@ This repository uses:
 ## Status
 
 Under active development.
+
+## Milestone 1 — Canonical Runtime
+
+The canonical Python runtime lives under `src/`. Its entry point is
+`main.py`, and the evaluation flow is:
+
+```
+main.py -> JUFERuntime (src/runtime.py) -> ABTMEngine.evaluate() (src/engines/abtm.py)
+```
+
+`ABTMEngine.evaluate()` now accepts four optional, caller-supplied
+opt-in diagnostics, each defaulting to `None` ("not requested"):
+dominance (`dominance_threshold`), L2 phase lock
+(`phase_lock_tolerance`), global balance (`global_balance_tolerance`),
+and bifurcation (`bifurcation_threshold`). When none of the four are
+supplied, default evaluation output is unchanged from before these
+diagnostics existed.
+
+The verified test suite contains 215 passing tests.
+
+See [`docs/MILESTONE_1_CANONICAL_RUNTIME.md`](docs/MILESTONE_1_CANONICAL_RUNTIME.md)
+for the full milestone record: execution flow, input model, worked
+examples for every diagnostic, response shapes, known limitations, and
+traceability to the underlying manuscript definitions/requirements.
