@@ -63,12 +63,33 @@ class JUFERuntime:
 
         }
 
-    def evaluate(self, values):
+    def evaluate(
+        self,
+        values,
+        *,
+        dominance_threshold=None,
+        phase_lock_tolerance=None,
+        global_balance_tolerance=None,
+        bifurcation_threshold=None,
+    ):
         """
         Evaluate a single Local Field State.
+
+        The four keyword-only diagnostic arguments (all defaulting to
+        ``None``, meaning "not requested") are forwarded straight
+        through to ``ABTMEngine.evaluate()`` unchanged -- see that
+        method's own docstring for the exact opt-in diagnostic methods
+        each one exposes and the byte-for-byte default-output identity
+        guarantee when all four are omitted.
         """
 
-        return self.engine.evaluate(values)
+        return self.engine.evaluate(
+            values,
+            dominance_threshold=dominance_threshold,
+            phase_lock_tolerance=phase_lock_tolerance,
+            global_balance_tolerance=global_balance_tolerance,
+            bifurcation_threshold=bifurcation_threshold,
+        )
 
     def evaluate_dataset(self, values):
         """

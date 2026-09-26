@@ -69,15 +69,152 @@ class ABTMEngine:
 
         return sigma == 0
 
+    def _build_diagnostics(
+        self,
+        states,
+        *,
+        dominance_threshold,
+        phase_lock_tolerance,
+        global_balance_tolerance,
+        bifurcation_threshold,
+        single_state,
+    ):
+        """
+        Build the additive, opt-in ``diagnostics`` mapping for
+        ``evaluate()``.
+
+        Every entry here is computed by calling one of the four
+        already-reviewed opt-in diagnostic methods directly
+        (``JUFEFieldGradient.evaluate_dominance``,
+        ``JUFEPhaseLock.evaluate_phase_lock``,
+        ``JUFEGlobalConservation.global_field_balance``,
+        ``JUFESensitivityMatrix.evaluate_bifurcation``) -- this helper
+        does not reimplement any of their math or validation. A
+        diagnostic is included only when its corresponding
+        ``evaluate()`` keyword argument is not ``None``; the caller's
+        exact value is always passed straight through, never defaulted,
+        clamped, or coerced. When every kwarg is ``None`` this returns
+        an empty dict, and ``evaluate()`` does not attach a
+        ``"diagnostics"`` key at all in that case.
+
+        ``states`` must be the same ``transformed_states`` list already
+        built by the caller's normal per-state loop (i.e. it never
+        includes any ``remaining`` values), so ``global_balance`` uses
+        exactly the same scope the existing ``global_conservation``
+        field already uses.
+
+        ``dominance``/``phase_lock`` are computed once per entry in
+        ``states``, in that same order. When ``single_state`` is True
+        (the flattened one-state return shape) the single result object
+        is stored directly rather than wrapped in a one-element list,
+        matching how every other single-state field already appears
+        unwrapped in that branch. ``global_balance`` and
+        ``bifurcation`` are always single results, regardless of branch
+        -- ``global_balance`` spans all of ``states`` at once, and
+        ``bifurcation`` is evaluated once against the engine's own
+        canonical ``self.sensitivity`` matrix, never per state.
+        """
+
+        diagnostics = {}
+
+        if dominance_threshold is not None:
+
+            dominance_results = [
+                self.gradient.evaluate_dominance(
+                    state,
+                    threshold=dominance_threshold,
+                )
+                for state in states
+            ]
+
+            diagnostics["dominance"] = (
+                dominance_results[0]
+                if single_state
+                else dominance_results
+            )
+
+        if phase_lock_tolerance is not None:
+
+            phase_lock_results = [
+                self.phase_lock.evaluate_phase_lock(
+                    state,
+                    tolerance=phase_lock_tolerance,
+                )
+                for state in states
+            ]
+
+            diagnostics["phase_lock"] = (
+                phase_lock_results[0]
+                if single_state
+                else phase_lock_results
+            )
+
+        if global_balance_tolerance is not None:
+
+            diagnostics["global_balance"] = (
+                self.global_conservation.global_field_balance(
+                    states,
+                    tolerance=global_balance_tolerance,
+                )
+            )
+
+        if bifurcation_threshold is not None:
+
+            diagnostics["bifurcation"] = (
+                self.sensitivity.evaluate_bifurcation(
+                    threshold=bifurcation_threshold,
+                )
+            )
+
+        return diagnostics
+
     def evaluate(
         self,
         values,
+        *,
+        dominance_threshold=None,
+        phase_lock_tolerance=None,
+        global_balance_tolerance=None,
+        bifurcation_threshold=None,
     ):
         """
         Unified evaluation entry point.
 
         Accepts either a single Local Field State
         or an arbitrary-length dataset.
+
+        Four optional, keyword-only diagnostic arguments -- all
+        defaulting to ``None`` (meaning "not requested") -- expose the
+        already-reviewed opt-in diagnostic methods added in prior
+        consolidation steps:
+
+            dominance_threshold      -> JUFEFieldGradient.evaluate_dominance
+            phase_lock_tolerance     -> JUFEPhaseLock.evaluate_phase_lock
+            global_balance_tolerance -> JUFEGlobalConservation.global_field_balance
+            bifurcation_threshold    -> JUFESensitivityMatrix.evaluate_bifurcation
+
+        When all four are ``None`` (the default), the returned result
+        is byte-for-byte identical to calling ``evaluate()`` with no
+        diagnostic arguments at all in every prior consolidation step:
+        no ``"diagnostics"`` key is added to the result under any
+        circumstance in that case -- not present, not ``None``, not an
+        empty dict. Every existing field, in every existing branch
+        (short-input error, single complete state, multi-state,
+        non-multiple-of-six remainder), is computed by exactly the same
+        unchanged code path as before this method gained these
+        arguments.
+
+        When one or more diagnostic arguments are supplied, an
+        additive-only ``"diagnostics"`` key is attached to the result
+        AFTER it is otherwise fully built, containing only the
+        diagnostics that were actually requested. See
+        ``_build_diagnostics`` above for the exact per-branch shape
+        (single object vs. list, and which diagnostics apply once
+        across the whole call vs. once per state).
+
+        This method never calls ``JUFETransformation.apply_coupled_field_step``
+        and accepts no ``rate``/``dt`` arguments -- automatic coupled
+        evolution is out of scope for this integration step.
         """
 
         if len(values) < 6:
@@ -214,9 +351,21 @@ class ABTMEngine:
                 "status"
             ] = "IMPLEMENTED"
 
+            diagnostics = self._build_diagnostics(
+                transformed_states,
+                dominance_threshold=dominance_threshold,
+                phase_lock_tolerance=phase_lock_tolerance,
+                global_balance_tolerance=global_balance_tolerance,
+                bifurcation_threshold=bifurcation_threshold,
+                single_state=True,
+            )
+
+            if diagnostics:
+                result["diagnostics"] = diagnostics
+
             return result
 
-        return {
+        result = {
 
             "states":
                 results,
@@ -243,3 +392,17 @@ class ABTMEngine:
                 "IMPLEMENTED",
 
         }
+
+        diagnostics = self._build_diagnostics(
+            transformed_states,
+            dominance_threshold=dominance_threshold,
+            phase_lock_tolerance=phase_lock_tolerance,
+            global_balance_tolerance=global_balance_tolerance,
+            bifurcation_threshold=bifurcation_threshold,
+            single_state=False,
+        )
+
+        if diagnostics:
+            result["diagnostics"] = diagnostics
+
+        return result
