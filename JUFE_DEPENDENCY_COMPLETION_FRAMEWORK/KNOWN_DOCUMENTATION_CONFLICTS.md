@@ -156,46 +156,20 @@ separately authorized decision.
 
 ---
 
-## Conflict C — Canonical manuscript item 17 is the same text as the non-manuscript template `36.md`
+## Conflict C — Duplicate V4 source copy removed (4 October 2026)
 
-`JUFE_RESEARCH/TOOLS/SOURCES/MANUSCRIPTS/CANONICAL/TFJ-Canonical-Self-Bootstrapping-Monograph-Architecture-V4.md`
-was added directly to `origin/main` by commit `08ec6da` ("Add TFJ canonical
-monograph architecture V4 manuscript"), independently of and prior to the
-3 October 2026 source-pack reconciliation pass described elsewhere in this
-document. Discovered while pulling that commit into the local working copy
-during a follow-up source-collection update (3 October 2026):
+Source `36.md` is now preserved whole and unchanged once at
+`JUFE_RESEARCH/TOOLS/SOURCES/MANUSCRIPTS/CANONICAL/TFJ-Canonical-Self-Bootstrapping-Monograph-Architecture-V4.md`.
+The second template copy was removed. This is duplicate removal, not a
+scientific or mathematical classification decision.
 
-- This file's content is, modulo line-wrapping and whitespace only,
-  byte-identical in substance to source artifact `36.md` from the JUFE
-  Source Assessment Pack.
-- `36.md` was independently classified by the 3 October 2026 reconciliation
-  pass as a **non-manuscript organizational template** (a Python-style
-  `FILES_MANIFEST` of LaTeX chapter stubs, "not manuscript prose and not
-  executable code") and is preserved under that classification at
-  `JUFE_RESEARCH/TOOLS/SOURCES/MANUSCRIPTS/NON_MANUSCRIPT_TEMPLATES/36-v4-files-manifest-template.md`,
-  explicitly excluded from the canonical manuscript count.
-- The same text is simultaneously filed as a **canonical manuscript**
-  (item 17) in `MANUSCRIPTS/README.md`, because it already existed on
-  `origin/main` as a committed, named manuscript file before this
-  reconciliation work reached it.
+## Current original-source location (4 October 2026)
 
-**Why this matters:** the source pack's classification decision and the
-already-committed GitHub classification for the identical text disagree.
-Neither the reconciliation pass nor this follow-up update had the
-authority or the information to decide which classification should
-control, since the GitHub commit was made independently (directly by the
-repository owner) and outside the source-pack review this document
-otherwise tracks.
-
-**Not done by this follow-up pass:** the GitHub-committed canonical V4 file
-was not deleted, moved, or reclassified; the `NON_MANUSCRIPT_TEMPLATES/`
-copy of `36.md` was not deleted or reclassified either. `MANUSCRIPTS/README.md`
-was only corrected to list item 17 by name (it had been entirely absent from
-the numbered list, an undercount), with this conflict flagged inline. A
-human decision is needed on whether item 17 should remain a separate
-canonical manuscript, be merged with/superseded by the `36.md` template
-record, or some other resolution — and if so, which of the two near-duplicate
-files should be treated as authoritative.
+The complete combined manuscript is preserved unchanged at
+`Research Processing/Relational Unified Field Mechanics Analytical Resolution of CriticalΓÇª.md`.
+References above to Manuscript 001/002 split original-source copies describe
+the earlier state: those source copies have been removed. Their separate
+analysis documents remain. Conflicts A and B are not resolved by preservation.
 
 ---
 

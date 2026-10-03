@@ -1,13 +1,3 @@
-# JUFE Universe Project — Canonical Self-Bootstrapping Monograph Architecture (V4)
-
-Author: Thomas F. Jennings  
-Project Index: TR-M6-CANONICAL-V4  
-Source: https://www.youtube.com/post/Ugkx-W8SD4xVY8nUWy1SIu3WOv30Swoh8aQ1  
-Author channel ID: UCa2sLLQdHhQX1gpSqijyZlg
-
-Source text supplied from the Community post. Line breaks are arranged for readability; the displayed notation is retained without reconstructing missing mathematical symbols. This file preserves the source and does not execute it.
-
-~~~python
 #!/usr/bin/env python3
 """
 JUFE Universe Project
@@ -22,8 +12,14 @@ terminology standard, and operator hierarchy for future
 M^6 manuscript generations.
 
 Core Ontology:
-State → Potential → Constraint → Transfer →
-Transformation → Regulation → Equilibrium
+
+State
+→ Potential
+→ Constraint
+→ Transfer
+→ Transformation
+→ Regulation
+→ Equilibrium
 """
 
 FILES_MANIFEST = {
@@ -90,24 +86,25 @@ Within the Relational $\mathbb{M}^{6}$ Manifold
 \chapter*{Global Executive Abstract}
 \addcontentsline{toc}{chapter}{Global Executive Abstract}
 
-This manuscript presents the canonical architecture of the relational
-$\mathbb{M}^{6}$ framework. The work is organized around a systems ontology
-in which state evolution emerges through interactions among potential,
-constraint, transfer, transformation, regulation, and equilibrium processes.
+This manuscript presents the canonical architecture of the
+relational $\mathbb{M}^{6}$ framework. The work is organized
+around a systems ontology in which state evolution emerges
+through interactions among potential, constraint, transfer,
+transformation, regulation, and equilibrium processes.
 
-Version V4 standardizes terminology while preserving all mathematical
-operators, conservation identities, topological structures, and dynamical
-mechanisms.
+Version V4 standardizes terminology while preserving all
+mathematical operators, conservation identities, topological
+structures, and dynamical mechanisms.
 """,
 
 "ontology.tex": r"""
 \chapter{Foundational Ontology}
 
-The terminology employed throughout this work is functional rather than
-implementation-specific.
+The terminology employed throughout this work is functional
+rather than implementation-specific.
 
-Physical realizations are treated as examples of relational mechanisms
-rather than definitions of those mechanisms.
+Physical realizations are treated as examples of relational
+mechanisms rather than definitions of those mechanisms.
 
 [
 \boxed{
@@ -130,7 +127,8 @@ rather than definitions of those mechanisms.
 \section*{Editorial Note}
 
 Version V4 introduces terminology normalization and ontology
-standardization without modifying the underlying mathematical framework.
+standardization without modifying the underlying mathematical
+framework.
 """,
 
 "terminology.tex": r"""
@@ -138,19 +136,33 @@ standardization without modifying the underlying mathematical framework.
 
 \section*{Canonical Replacements}
 
-Hydraulic Shunt $\rightarrow$ Cross-Axial Relief-Transfer Tensor
+Hydraulic Shunt
+$\rightarrow$
+Cross-Axial Relief-Transfer Tensor
 
-Principle of Least Resistance $\rightarrow$ Principle of Least Impedance
+Principle of Least Resistance
+$\rightarrow$
+Principle of Least Impedance
 
-Baseline Stress Threshold Matrix $\rightarrow$ Critical Constraint Matrix
+Baseline Stress Threshold Matrix
+$\rightarrow$
+Critical Constraint Matrix
 
-Scar Registry $\rightarrow$ Evolutionary State Registry
+Scar Registry
+$\rightarrow$
+Evolutionary State Registry
 
-Throttle Brake $\rightarrow$ Dynamic Regulation Operator
+Throttle Brake
+$\rightarrow$
+Dynamic Regulation Operator
 
-Topological Phase Shifter $\rightarrow$ State Transition Operator
+Topological Phase Shifter
+$\rightarrow$
+State Transition Operator
 
-Topological Collapse $\rightarrow$ Functional Compression
+Topological Collapse
+$\rightarrow$
+Functional Compression
 """,
 
 "operator_hierarchy.tex": r"""
@@ -199,6 +211,7 @@ Evolutionary State Registry
 
 [
 \mathbb{M}^{6}
+
 \mathbb{R}^{3}{comp}
 \times
 \mathbb{R}^{3}{rep}
@@ -210,9 +223,7 @@ where
 \mathbb{R}^{3}_{comp}
 ]
 
-denotes the Convergent Relational Field
-
-and
+denotes the Convergent Relational Field and
 
 [
 \mathbb{R}^{3}_{rep}
@@ -224,7 +235,14 @@ denotes the Divergent Relational Field.
 
 [
 \Psi
-\langle \omega, \Theta, M, A, Z_6 \rangle
+
+\langle
+\omega,
+\Theta,
+M,
+A,
+Z_6
+\rangle
 ]
 
 \chapter{Biaxial Tensegrity Boundary Condition}
@@ -239,6 +257,7 @@ S_n = \phi^{-n}
 
 [
 \frac{V_{n+1}}{V_n}
+
 \phi^{-6}
 ]
 """,
@@ -266,8 +285,8 @@ Preferred state evolution trajectories.
 
 \chapter{Functional Compression}
 
-Reduction of active relational degrees of freedom while preserving
-underlying topology.
+Reduction of active relational degrees of freedom
+while preserving underlying topology.
 """,
 
 "transfer_mechanics.tex": r"""
@@ -312,32 +331,51 @@ Global mediation architecture.
 ]
 
 \chapter{Eigenvalue Structure}
+
 \chapter{Damping Functions}
+
 \chapter{Resonance Conditions}
+
 \chapter{Synchronization}
+
 \chapter{Phase-Locked States}
+
 \chapter{Lyapunov Stability}
+
 \chapter{Spectral Zeros}
 """,
 
 "arithmetic_geometry.tex": r"""
 \chapter{Arithmetic Topology}
+
 \chapter{The Z6 Structural Group}
+
 \chapter{Scale-Transfer Mechanisms}
+
 \chapter{Constraint Invariants}
+
 \chapter{Diophantine Structures}
+
 \chapter{Fermat-Type Constraint Arguments}
+
 \chapter{Prime Structures}
+
 \chapter{Riemann Spectral Correspondence}
 """,
 
 "verification.tex": r"""
 \chapter{Falsifiability Requirements}
+
 \chapter{Predictive Requirements}
+
 \chapter{Internal Consistency Tests}
+
 \chapter{Scale Invariance Tests}
+
 \chapter{Constraint Conservation Tests}
+
 \chapter{Numerical Validation Pathways}
+
 \chapter{Experimental Correspondence}
 """,
 
@@ -351,14 +389,19 @@ Global mediation architecture.
 ]
 
 \chapter{Operator Catalog}
+
 \chapter{Tensor Catalog}
+
 \chapter{Canonical Glossary}
+
 \chapter{Symbol Dictionary}
+
 \chapter{Terminology Crosswalk}
 
-Historical terminology $\rightarrow$ Canonical terminology
+Historical terminology
+$\rightarrow$
+Canonical terminology
 
 \chapter{Development History}
 """
-}
-~~~
+} 

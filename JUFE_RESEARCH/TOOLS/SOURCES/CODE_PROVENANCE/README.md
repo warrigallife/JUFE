@@ -13,7 +13,7 @@ mean their content has been verified, proven, or that the current runtime
 is a copy of them. It means they are preserved and their relationship to
 current runtime code has been checked and is recorded below.
 
-## Original fragments (preserved verbatim, heading-numeral stripped only)
+## Original fragments (complete originals, unchanged)
 
 - `ORIGINAL_FRAGMENTS/13-kernel-fragment.md` — from source artifact `13.md`
   (`sha256: 7e22d82eca25071e9659ca8c7695f135a15bca5132d1f3289589f7428153a67b`
@@ -31,9 +31,8 @@ current runtime code has been checked and is recorded below.
   `compute_manifold_stability(psi_barrier)` method implementing
   `sigma = np.trace(psi_barrier) % 6; return sigma == 0`.
 
-Both fragments were confirmed byte-identical to the source pack originals
-except for the stripped leading bare-numeral heading line (`13` / `14`),
-exactly as `MANUSCRIPTS/CANONICAL` does for manuscript sources.
+Both fragments now use the exact original Git blobs, including the supplied
+leading headings. No content or formatting is changed.
 
 ## What `13.md` vs `14.md` actually differ on
 
