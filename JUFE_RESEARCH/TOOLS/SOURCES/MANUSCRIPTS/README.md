@@ -48,10 +48,10 @@ manuscript content was altered. See:
 
 Closed the `4.md` indexing gap (see "atriΩ Non-Arbitrary Predictor
 Development Pt.2" below - `4.md` is now named alongside `18.md`).
-Independently recomputed the sha256 of all 38 originals against
-`SOURCE_MANIFEST.json` (zero mismatches) and archived every one of the 38
-originals verbatim, including all 12 duplicate copies, at
-`../ORIGINALS_ARCHIVE/` (new - see `../ORIGINALS_ARCHIVE/README.md`).
+The earlier pass verified original checksums. The unwanted repository
+archive has since been removed; original custody remains in the user's
+main archive. Exact retained variants `4.md`, `5.md`, `16.md`, and `34.md`
+are preserved in the existing `MISSING_SOURCE/` folder.
 Confirmed that `Research Processing/Manuscript 001/Original Manuscript.md`
 and `Research Processing/Manuscript 002/Original Manuscript.md` (elsewhere
 in the JUFE repository, outside this `MANUSCRIPTS/` tree) are
@@ -175,9 +175,9 @@ separately copied into `CANONICAL/`, because their substantive content is
 the same Non-Arbitrary Initialization Protocol / Foundation Layer material
 already held as canonical item 2
 (`TFJ-Non-Arbitrary-Initialization-Protocol-Foundation-Layer.md`, sourced
-from `3.md`). Verbatim preservation copies of both `4.md` and `18.md` are
-retained at `../ORIGINALS_ARCHIVE/4.md` and `../ORIGINALS_ARCHIVE/18.md`
-(see `../ORIGINALS_ARCHIVE/README.md` and `PROVENANCE_MAP.md`).
+from `3.md`). The retained `4.md` variant is preserved unchanged at `MISSING_SOURCE/4.md`.
+Its redundant `18.md` copy remains in the external source pack; it is not
+copied into this repository. See `PROVENANCE_MAP.md`.
 
 The supplied artifact identifies itself as Pt.2, but its substantive
 material corresponds to the Non-Arbitrary Initialization Protocol /
@@ -348,3 +348,8 @@ source status before changing the canonical corpus.
 PRESERVE FIRST -> CATALOGUE -> VERIFY -> FORMALISE -> IMPLEMENT
 
 Never silently invent missing mathematics or repair source history.
+## Retained unresolved source artifacts
+
+`MISSING_SOURCE/4.md`, `5.md`, `16.md`, and `34.md` preserve the supplied
+artifacts unchanged, including their original labels and title-only material.
+These are source records, not reconstructed or reclassified manuscripts.
