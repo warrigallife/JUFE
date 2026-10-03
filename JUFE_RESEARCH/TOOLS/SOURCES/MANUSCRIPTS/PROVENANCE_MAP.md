@@ -45,7 +45,7 @@ other retained content remains in the curated locations below.
 |---|---|---|---|---|---|---|
 | 1 | `1/1.md` | KEEP REPRESENTATIVE | - | `cba479a20b289c48e14a4e6b654d0e26a65c2f3e3cd06cc0c71096872712b0ab` | `CANONICAL/TFJ-Holistic-Stability-and-Universal-Scaling.md` (heading-stripped, normalized) | Main archive source pack (external) |
 | 2 | `10.md` | KEEP REPRESENTATIVE | - | `781c3a5a50400892c36710683092a3fbf0bc2f387711850560f0c8fa3448917f` | `CANONICAL/TFJ-Volume-I-Ch01-Planck-Floor-Constraint.md` (normalized) | Main archive source pack (external) |
-| 3 | `11.md` | KEEP REPRESENTATIVE | body: `12.md` | `9f6fb824106b2c77f45b43a6698ba8fe3e5f9ec67c030232f776f9370933f793` | Body: see `12.md` row. Unique closing passage: `CANONICAL/TFJ-Volume-I-Closing-Conversational-Prompt-Fragment.md` (fragment only) | Main archive source pack (external) |
+| 3 | `11.md` | KEEP REPRESENTATIVE | body: `12.md` | `9f6fb824106b2c77f45b43a6698ba8fe3e5f9ec67c030232f776f9370933f793` | `CANONICAL/11.md` — complete original, unchanged (body and closing passage) | Main archive source pack (external) |
 | 4 | `12.md` | KEEP REPRESENTATIVE | - | `c075e0815d668d1e98cf1bd724caa7f8e8684c07d556803649f6db03ad93e297` | `CANONICAL/TFJ-Volume-I-Ch02-Generalized-Field-Syntax-and-Operator-Formalism.md` (normalized) | Main archive source pack (external) |
 | 5 | `13.md` | KEEP REPRESENTATIVE (non-manuscript/code) | - | `7e22d82eca25071e9659ca8c7695f135a15bca5132d1f3289589f7428153a67b` | `../CODE_PROVENANCE/ORIGINAL_FRAGMENTS/13-kernel-fragment.md` (normalized) | Main archive source pack (external) |
 | 6 | `14.md` | KEEP REPRESENTATIVE (non-manuscript/code) | - | `fb84ae2f885ad4d38037233431aa9ac3c3dd2f3cde9df78d6a84777e63718372` | `../CODE_PROVENANCE/ORIGINAL_FRAGMENTS/14-kernel-abtm-fragment.md` (normalized) | Main archive source pack (external) |
@@ -80,7 +80,7 @@ other retained content remains in the curated locations below.
 | 35 | `8.md` | KEEP REPRESENTATIVE | - | `a2621d0f271e2fb5d026d8fac4ba6874278dcb3b4c8d8b096c3c435409672666` | `CANONICAL/TFJ-Unified-Harmonic-Manifold-Comprehensive-Synthesis.md` (normalized) | Main archive source pack (external) |
 | 36 | `9.md` | REDUNDANT ACTIVE COPY | `8.md` | `3bfbf3d860dece45373e6efefe3478adfec65cea5d1d1fb35ad0fbd31f66fd43` | Not separately curated (duplicate) | Main archive source pack (external) |
 | 37 | `MANIFESTO FOR UNIVERSAL UTILITY The CTTM Accord.md` | KEEP REPRESENTATIVE | - | `37b2751055b6eb6a9414482861e2140fe383818b14a9d6a634ed05d012621b10` | `../../../../JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/CTTM_ACCORD.md` - "Accord Text" section is verbatim; file also carries a separated "Commentary / Notes" section, so the full-file hash does not match this original's hash (expected) | Main archive source pack (external) |
-| 38 | `Relational Unified Field Mechanics Analytical Resolution of Critical...md` (combined essay + "Unified ABTM Field Equations") | KEEP REPRESENTATIVE | - | `79f2bd4521bb0fc84dd8daf1a056d53c49e8b664a799f870bdda3e5ee9777fa1` | **Split, dual/triple representation - see `../../../../JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/KNOWN_DOCUMENTATION_CONFLICTS.md` Conflict A.** (a) Word-for-word verbatim split copy (markdown-heading formatting only differs) at `Research Processing/Manuscript 001/Original Manuscript.md` (part 1) and `Research Processing/Manuscript 002/Original Manuscript.md` (part 2) - confirmed 3 Oct 2026. (b) Faithfully quoted with section citations (not verbatim, paraphrased with direct quotes) via DEF-0001-DEF-0036, LEMMA-3.1, THEOREM-4.2 in `JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/`. (c) Independently rewritten, non-matching prose at `Specifications/Research Archive/Manuscript 001/002` | Main archive source pack (external) |
+| 38 | `Relational Unified Field Mechanics Analytical Resolution of Critical...md` (combined essay + "Unified ABTM Field Equations") | KEEP REPRESENTATIVE | - | `79f2bd4521bb0fc84dd8daf1a056d53c49e8b664a799f870bdda3e5ee9777fa1` | `Research Processing/Relational Unified Field Mechanics Analytical Resolution of CriticalΓÇª.md` — complete combined original, unchanged. Existing split/analysis documents are derived representations, not replacements for this source. | Main archive source pack (external) |
 
 ## Totals (arithmetic rechecked)
 
@@ -93,23 +93,25 @@ other retained content remains in the curated locations below.
     `MANUSCRIPTS/CANONICAL/`: `1/1.md`, `3.md`, `6.md`, `7.md`, `8.md`,
     `10.md`, `12.md`, `26.md`, `27.md`, `28.md`, `29.md`, `30.md`, `31.md`,
     `32.md`, `35.md`, `37.md`.
-  - **1** (`11.md`) has a partial curated copy - only its unique closing
-    fragment, since its body duplicates `12.md`.
+  - **1** (`11.md`) is retained as a complete unchanged file at `CANONICAL/11.md`.
   - **1** (`5.md`) has a descriptive `MISSING_SOURCE/` record (title
     quoted, no body to copy).
   - **2** (`13.md`, `14.md`) have a curated copy in `../CODE_PROVENANCE/`.
   - **1** (`36.md`) has a curated copy in `NON_MANUSCRIPT_TEMPLATES/`.
   - **1** (the MANIFESTO/CTTM Accord) has a curated, restored copy at
     `CTTM_ACCORD.md`.
-  - **1** (the combined Relational Unified Field Mechanics / Unified ABTM
-    Field Equations source) has a verbatim split copy in
-    `Research Processing/`, plus a separate faithful-but-paraphrased
-    quotation layer in `JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/`, plus a
-    non-matching independent rewrite in `Specifications/Research Archive/`
-    (Conflict A, undisturbed).
+  - **1** (the combined manuscript) is retained whole and unchanged at
+    `Research Processing/Relational Unified Field Mechanics Analytical Resolution of CriticalΓÇª.md`. Existing split/analysis documents do not replace it.
   - **3** (`4.md`, `16.md`, `34.md`) retain their original label/body variants
     unchanged in `MISSING_SOURCE/`, with their status tracked in `README.md`.
   - 16 + 1 + 1 + 2 + 1 + 1 + 1 + 3 = **26**. Confirmed.
 - All 38 originals remain in the user's external main archive source pack.
   GitHub retains the curated collection and four exact unresolved/title-only
   artifacts, without a second blanket archive of originals and duplicates.
+
+## Whole-source correction
+
+The full original Git blobs for `11.md` and the combined manuscript were
+restored without content changes. The standalone extracted closing fragment
+was removed. Prior split documents remain existing derived records; use the
+whole source above when reading the supplied manuscript.

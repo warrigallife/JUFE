@@ -35,8 +35,7 @@ Reconciled against the JUFE Source Assessment Pack's `SOURCE_MANIFEST.json`
 unindexed canonical manuscripts (items 15-16 below), one previously
 unindexed unresolved-provenance source (`16.md`), one previously unindexed
 non-manuscript template artifact (`36.md`), two previously unindexed
-duplicate-copy entries (`19.md`, `33.md`), and a standalone preserved
-fragment from `11.md`. No existing canonical item, DEF identifier, or
+duplicate-copy entries (`19.md`, `33.md`), and the retained source `11.md`. No existing canonical item, DEF identifier, or
 manuscript content was altered. See:
 
 - `PROVENANCE_MAP.md` (this directory) - full 38-original disposition map
@@ -265,11 +264,9 @@ sources:
 *18.md is additionally retained as an unresolved Pt.2 provenance record.
 
 **11.md's manuscript body duplicates 12.md, but 11.md also carries a unique
-51-word closing conversational prompt not present in 12.md. That prompt is
-preserved verbatim, separately from the canonical manuscript body, at
-`CANONICAL/TFJ-Volume-I-Closing-Conversational-Prompt-Fragment.md` (added 3
-October 2026). The prompt's speaker/attribution is unknown and is recorded
-as such in that file.
+51-word closing conversational prompt not present in 12.md. The complete
+supplied `11.md`, including its body and closing passage, is preserved unchanged
+at `CANONICAL/11.md`. The separate extracted fragment has been removed.
 
 Original/archive copies should be retained outside CANONICAL where available.
 
@@ -353,3 +350,12 @@ Never silently invent missing mathematics or repair source history.
 `MISSING_SOURCE/4.md`, `5.md`, `16.md`, and `34.md` preserve the supplied
 artifacts unchanged, including their original labels and title-only material.
 These are source records, not reconstructed or reclassified manuscripts.
+
+## Complete original sources
+
+- `CANONICAL/11.md` preserves the whole supplied file, unchanged.
+- `Research Processing/Relational Unified Field Mechanics Analytical Resolution of CriticalΓÇª.md` preserves the whole combined manuscript,
+  unchanged. Existing Manuscript 001/002 split documents are not substitutes.
+
+These source files reuse their original Git blobs. No source wording, equations,
+formatting or headings were edited for this correction.
