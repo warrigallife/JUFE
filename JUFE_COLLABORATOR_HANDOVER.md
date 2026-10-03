@@ -405,3 +405,61 @@ Do not mix Warrigal and JUFE tasks merely because the projects interact. Cross-s
 The first assignment should be **reproducible installation plus the specification-path portability fix**. It is concrete, testable, and does not require the collaborator to make scientific decisions.
 
 After that, the collaborator can establish the automated test foundation and map the overlapping execution pathways. The unresolved mathematical frontier should remain research/specification work rather than being guessed into code.
+
+## 16. Source-to-documentation reconciliation (3 October 2026)
+
+A read-only reconciliation pass cross-referenced the JUFE Source Assessment
+Pack (`SOURCE_MANIFEST.json`, 38 originals / 26 distinct source texts)
+against this repository's documentation, producing
+`JUFE_Source_Assessment_Pack/SOURCE_DOC_RECONCILIATION_2026-10-03.md`. Once
+reviewed and authorized, a second, documentation-only pass made the
+following additions/restorations. No mathematics, DEF identifier, runtime
+file, or controlling specification was changed by either pass.
+
+**Added:**
+
+- Four previously undocumented sources now tracked: `7.md` and `37.md` as
+  new canonical manuscripts (items 15-16), `16.md` as a new
+  provenance-unresolved entry, and `36.md` as a new non-manuscript template
+  entry. See
+  `JUFE_RESEARCH/TOOLS/SOURCES/MANUSCRIPTS/README.md` (v1.1) and the new
+  `JUFE_RESEARCH/TOOLS/SOURCES/MANUSCRIPTS/PROVENANCE_MAP.md` (full
+  38-original disposition map).
+- `11.md`'s previously undocumented unique closing passage, preserved at
+  `JUFE_RESEARCH/TOOLS/SOURCES/MANUSCRIPTS/CANONICAL/TFJ-Volume-I-Closing-Conversational-Prompt-Fragment.md`.
+- A code-provenance catalog for the two non-manuscript code fragments
+  `13.md`/`14.md`, including verified links to the current `src/kernel.py`,
+  `src/engines/abtm.py`, and `abtm_expansion.py`, at
+  `JUFE_RESEARCH/TOOLS/SOURCES/CODE_PROVENANCE/README.md`.
+
+**Restored:**
+
+- `JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/CTTM_ACCORD.md`, previously present
+  but empty despite being cited as the source for GOV-0001, now contains
+  the verbatim Accord text from the source pack in a clearly separated
+  "Accord Text" section, with provenance notes kept in a distinct
+  "Commentary / Notes" section. GOV-0001 itself was not touched.
+
+**Documented but deliberately NOT resolved — see
+`JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/KNOWN_DOCUMENTATION_CONFLICTS.md`:**
+
+- **Conflict A:** two incompatible documentary representations of the same
+  "Relational Unified Field Mechanics" manuscript — a faithful, section-cited
+  quotation layer in `JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/01_MASTER_INDEX/`
+  and `03_REFERENCE_LIBRARY/`, versus unrelated rewritten prose in
+  `Specifications/Research Archive/Manuscript 001/` and `Manuscript 002/`.
+- **Conflict B:** DEF identifier numbering disagrees across
+  `MASTER_DEFINITION_INDEX.md`, the individual `01_MASTER_INDEX/DEFINITIONS/*.md`
+  files, and `JUFE_ABTM_PROJECT_FOUNDATION/Specification/Definitions/definitions.json`
+  for the same concepts (Boundary Jam, Coupled Differential Feedback,
+  Harmonic Packet, Clean Cell Pool), including a direct same-folder
+  collision: two files in `03_REFERENCE_LIBRARY/EVIDENCE/` both named for
+  `DEF-0019` but describing different concepts, one of them empty
+  (`EVIDENCE_DEF-0019_Boundary_Jam.md`).
+
+**A future collaborator should not casually "fix" either conflict** (by
+renumbering a DEF identifier, deleting a file, or merging the two manuscript
+representations) without first reading
+`KNOWN_DOCUMENTATION_CONFLICTS.md` in full and getting explicit sign-off —
+the identifiers and both manuscript representations are treated as fixed
+reference points until a deliberate review decides otherwise.

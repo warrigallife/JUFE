@@ -24,6 +24,15 @@ This repository uses:
 
 Under active development.
 
+A source-to-documentation reconciliation pass (3 October 2026) added
+previously missing source-index entries and restored
+`JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/CTTM_ACCORD.md`. It also documented,
+without resolving, unresolved DEF-identifier numbering conflicts and two
+incompatible manuscript representations — see
+`JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/KNOWN_DOCUMENTATION_CONFLICTS.md`
+before changing any DEF-xxxx identifier or the `Specifications/Research
+Archive/` manuscripts.
+
 ## Milestone 1 — Canonical Runtime
 
 The canonical Python runtime lives under `src/`. Its entry point is

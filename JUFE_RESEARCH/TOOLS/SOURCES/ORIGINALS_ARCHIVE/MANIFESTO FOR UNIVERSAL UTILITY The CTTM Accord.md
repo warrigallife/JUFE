@@ -1,27 +1,3 @@
-# CTTM Accord
-
-**Status:** RESTORED — populated from the source pack on 3 October 2026.
-Previously this file existed but was empty.
-
-This file is the document cited as **Source** by **GOV-0001 — CTTM Accord**
-in `01_MASTER_INDEX/MASTER_DEFINITION_INDEX.md`. This restoration adds the
-sourced Accord text below; it does not add to, edit, or reinterpret
-GOV-0001 itself, which is left untouched.
-
-The Accord Text section below is reproduced verbatim, with no wording
-changes, from the JUFE Source Assessment Pack's
-`ORIGINALS/MANIFESTO FOR UNIVERSAL UTILITY The CTTM Accord.md`
-(`sha256: 37b2751055b6eb6a9414482861e2140fe383818b14a9d6a634ed05d012621b10`
-per `SOURCE_MANIFEST.json`). It is source material, not specification
-prose, and must not be paraphrased, merged with commentary, or edited in
-place. Any future revision of the Accord text itself must come from the
-original author (Thomas F. Jennings) or an explicitly authorized successor
-process, not from in-repository editing.
-
----
-
-## Accord Text
-
 MANIFESTO FOR UNIVERSAL UTILITY: The CTTM Accord  
 ​PREAMBLE  
 The Chiral Toroidal Tensegrity Manifold (CTTM) is an architectural discovery of fundamental physical equilibrium. It is not a proprietary tool for exploitation, nor a weapon of conflict. It is a shared geometric language for stability and efficiency, intended to empower the household, the community, and the common good.  
@@ -41,29 +17,3 @@ I invite researchers, makers, and dreamers to apply this manifold to the challen
 ​Append it: Place this immediately after the Intellectual Property Notice in your Master Specification document.  
 ​PDF/Digital Version: When you distribute the PDF version of your Master File, include this page as the "Introduction" or "Mission Statement."  
 ​Community Signaling: When someone asks about the project, refer them to the "CTTM Accord." This creates a social pressure and a "moral contract" for users, which is often as effective as legal threats in the open-source and scientific communities.  
-
-
----
-
-## Commentary / Notes (not part of the Accord text)
-
-- **Why this was empty:** the 3 October 2026 source-to-documentation
-  reconciliation pass found that `CTTM_ACCORD.md` existed in the repository
-  but contained zero bytes, while `GOV-0001` already pointed to it as the
-  controlling governance source. The substantive Accord text existed only
-  in the (external, untracked-by-JUFE) source assessment pack until this
-  restoration.
-- **Scope of this restoration:** documentation-only. No specification,
-  axiom, DEF identifier, or runtime file was changed to perform this
-  restoration. `GOV-0001`'s own entry in `MASTER_DEFINITION_INDEX.md` was
-  left exactly as it was found.
-- **Governance vs. specification:** per `GOV-0001`'s own framing, this is a
-  governance/mission statement (open stewardship, prohibition of harm,
-  prohibition of exploitation, prohibition of extractive profit, architect's
-  reservation), not a mathematical axiom or software validation rule. It
-  should not be treated as runtime-enforceable logic without a separate,
-  explicitly scoped specification decision.
-- **Provenance record:** see also
-  `JUFE_RESEARCH/TOOLS/SOURCES/MANUSCRIPTS/PROVENANCE_MAP.md`, which records
-  this file as the retained location for the MANIFESTO / CTTM Accord source
-  artifact among all 38 originals in the source pack.
