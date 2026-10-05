@@ -1,0 +1,10 @@
+# branch.oid 636b724ef4a48e3c537dc8d296a101b62efe556c
+# branch.head main
+# branch.upstream origin/main
+# branch.ab +0 -0
+1 .M N... 100644 100644 100644 1805237399cd67a86313fe0cc26ab45062956469 1805237399cd67a86313fe0cc26ab45062956469 JUFE_COLLABORATOR_HANDOVER.md
+1 .M N... 100644 100644 100644 539f0635ce6a1ea32ea73ba40de5f1fa426c94fa 539f0635ce6a1ea32ea73ba40de5f1fa426c94fa JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/KNOWN_DOCUMENTATION_CONFLICTS.md
+? .workspace-os/
+? JUFE Explorer - READ ME.txt
+? Start JUFE Explorer.command
+? jufe_explorer.py

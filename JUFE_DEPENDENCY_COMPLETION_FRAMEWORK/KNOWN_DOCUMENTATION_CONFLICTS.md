@@ -14,6 +14,15 @@ See also `JUFE_COLLABORATOR_HANDOVER.md` (section added 3 October 2026) and
 `JUFE_Source_Assessment_Pack/SOURCE_DOC_RECONCILIATION_2026-10-03.md` for the
 full reconciliation report these conflicts were drawn from.
 
+**Path correction (5 October 2026):** `JUFE_Source_Assessment_Pack/` above
+does not exist and never did under that name; the reconciliation report is
+actually at
+`~/Desktop/INFORMATION_ARCHIVE/COLLECTIONS/JUFE/Tom_Jennings_Source_Collection/SOURCE_DOC_RECONCILIATION_2026-10-03.md`
+(verified present at this path). The line above is left as originally
+written; this note only adds the correct location. No conflict's
+conclusion, identifier, or scientific content is changed by this
+correction.
+
 ---
 
 ## Conflict A — Two incompatible documentary representations of the same manuscript
