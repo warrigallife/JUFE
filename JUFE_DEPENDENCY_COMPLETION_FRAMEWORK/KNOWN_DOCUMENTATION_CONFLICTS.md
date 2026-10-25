@@ -182,6 +182,46 @@ analysis documents remain. Conflicts A and B are not resolved by preservation.
 
 ---
 
+## Additional item (9 October 2026) — A separate "Unified Harmonic Manifold" (𝕄⁶) manuscript lineage exists, outside Conflicts A–C and the DEF/Atlas identifiers
+
+Conflicts A and B above concern two *representations* of one manuscript
+(the combined RUFM/ABTM text) and the DEF-identifier numbering drawn from
+it. Neither those conflicts, nor Conflict C, nor
+`MASTER_DEFINITION_INDEX.md`'s DEF-0001–DEF-0036, nor
+`DEPENDENCY_ATLAS/JUFE_Dependency_Atlas_v1.md`'s `ENT-`/`FLD-`/`GEO-`/
+`DYN-`/`AX-` entries reference an entirely separate, textually distinct
+manuscript tradition present in the retained source collection: the
+**"Unified Harmonic Manifold" (`\mathbb{M}^6`) treatise** (original
+sources 7, 8, 10, 11/12, 26–30, 32 — the foundational reading plan's own
+"main spine"), with its own vocabulary (`\mathcal{T}_P`,
+`\mathbf{\Omega}`, `\mathbf{E}_{\alpha\beta}`, the Dispersion/Hysteresis
+operators) that shares no identifiers with the DEF-numbering or Dependency
+Atlas at all. Checked directly for this entry: none of the three files
+above contains "Unified Harmonic Manifold," "Elastic Linkage," "Master
+UFE," `\mathbb{M}^6`, or "Comprehensive Synthesis" anywhere.
+
+This lineage has already been substantively analysed twice —
+`docs/reports/JUFE_37_Mathematical_Analysis.md` (§0–§8) and
+`docs/reports/JUFE_8_Foundational_Analysis_2026-10-06.md` (§0, §2, §5–§6)
+— and that analysis has itself been independently reviewed
+(`docs/reports/JUFE_8_Foundational_Analysis_Independent_Review_2026-10-06.md`,
+including its "Recheck" section). **This entry records only that the
+lineage's existence is not reflected in this document or the DEF/Atlas
+identifiers.** It does not restate, extend, or re-verify that analysis; it
+does not assert that any `\mathbb{M}^6` object corresponds to a specific
+DEF/Atlas entry or to either representation under Conflict A; and it does
+not assess whether the treatise itself is correct, complete, or physically
+valid. Source reference:
+`docs/reports/JUFE_Source8_Analysis_Reusability_Check_2026-10-09.md`
+(Omission 1), which first identified this gap.
+
+**Not done by this entry:** no DEF identifier, Atlas entry, or conflict
+classification was created, merged, or renumbered; no correspondence
+between this lineage and any other manuscript, representation, or
+identifier scheme is proposed or implied.
+
+---
+
 ## Secondary, lower-severity items noticed alongside the above (not acted on)
 
 These were observed during the same reconciliation pass but are outside the
@@ -204,3 +244,21 @@ here only so they are not lost:
   and `JUFE_RESEARCH/TOOLS/SOURCES/MANUSCRIPTS/PROVENANCE_MAP.md` row 31).
   This line is left struck through rather than deleted so the record of the
   original gap is not lost.
+- **Added 9 October 2026:**
+  `JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/Chapter_7_Unified_ABTM_Field_Equations.md`'s
+  title, and the combined RUFM/ABTM manuscript's own "Unified ABTM Field
+  Equations" section, sit one word from the separate `\mathbb{M}^6`
+  treatise's "Master UFE"/"Unified Field Equation" naming (source 8,
+  §2.1) — **a naming near-miss, not an implementation**: this chapter's
+  own "Authority" citations and its state variables (a static
+  `\mathbb{Z}_6` lattice plus a dynamic mod-7 harmonic) were independently
+  confirmed to derive from the combined RUFM/ABTM manuscript, not from
+  source 8. Confirmed in
+  `docs/reports/JUFE_8_Foundational_Analysis_Independent_Review_2026-10-06.md`
+  (§3, and its "Recheck" section's Correction 1) and recorded in
+  `docs/reports/JUFE_8_Foundational_Analysis_2026-10-06.md` §6.1; added
+  here per
+  `docs/reports/JUFE_Source8_Analysis_Reusability_Check_2026-10-09.md`
+  (Omission 2). No correspondence between this chapter and source 8 is
+  implied — this is recorded purely as a naming near-miss, so it is not
+  independently rediscovered later.

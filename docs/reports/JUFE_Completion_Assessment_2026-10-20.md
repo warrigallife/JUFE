@@ -1,0 +1,33 @@
+# JUFE completion assessment — 20 October 2026
+
+Status: local records reconciliation, not new research or an independent scientific review. Based on the preceding read-only assessment; no autopsy, tests or model calls were repeated. Publication approval is not implied.
+
+**Reconciled retained-source coverage: 24 Full / 0 Partial / 2 None**, per collaborator handover §54, superseding the 11 October audit's 12/8/6 snapshot. Full means the documented analysis-coverage criterion, not mathematical/experimental validity. Seventeen dedicated analysis/review pairs cover 22 artifacts; source 37 and the Accord contribute two differently qualified Full entries.
+
+| Area | Evidence and current status | Genuine remaining work |
+| --- | --- | --- |
+| Acquisition/indexing | `JUFE_RESEARCH/TOOLS/SOURCES/MANUSCRIPTS/PROVENANCE_MAP.md`: 38 supplied originals, 26 retained, 12 redundant copies. Prior assessment verified all 26 retained external-archive files have byte-identical tracked JUFE counterparts. | Preserve baseline; no recollection or repeated autopsy. This does not establish completeness of everything the author produced. |
+| Reading/analysis/review | `docs/reports/JUFE_37_Mathematical_Analysis.md` §8 records reading all 26; handover §§45–54 and corresponding `*_Foundational_Analysis_Independent_Review_*` files close later cycles. Source 31/35/36 and fragments are no longer unanalysed merely because the older audit says so. | Retain accepted corrections/rechecks; distinguish completed textual analysis from unresolved theory. Source 37's accepted coverage route is not a separate dedicated independent-review pair; Accord coverage is the determination that it is governance text. |
+| Combined RUFM/ABTM manuscript | `docs/reports/JUFE_Build_Inputs_Reconciliation_2026-10-16.md` §§2–4: acquired/indexed/read, existing `Research Processing/Manuscript 001/Structural Analysis.md`, `Manuscript 002/Structural Analysis.md` and DEF-layer work; no closed dedicated source-analysis/review cycle under the audit criterion. The whole combined file is in `Research Processing/` and named by the provenance map. | Dedicated source analysis and independent review, reusing prior structural/definition work. Add continuity cross-reference for already-resolved two-manuscript identity; do not recreate that reconciliation. |
+| Source 5 | `JUFE_RESEARCH/TOOLS/SOURCES/MANUSCRIPTS/MISSING_SOURCE/5.md`: acquired/indexed/read, title-only, no body in this retained artifact; one of the two None entries. | Substantive analysis blocked by retained content. Establish whether more author material exists through provenance/commentary; do not infer global absence from a failed search. |
+| Preserved commentary | External collection `TOM_JENNINGS/TOM_JENNINGS_COMMENTS.md`: 19 comments, intact in `JUFE_AUTHOR_COMMENTARY_CORPUS.md`; `LUCIDER_I_AM_I/LUCIDER_I_AM_I_COMMENTS.md`: four comments. IDs/links preserve identity. `JUFE_ARCHIVE_TRIGGER_RESULTS.{md,json}`: 500 results explicitly UNREVIEWED, not proof/confidence. | Full corpus reading, claim reconciliation and independent review remain unverified. Source-37 report explicitly excluded this corpus. Map relevant comments to known unresolved questions without equating author statements with independent evidence. |
+| Scientific questions | Source-37 question register (§8); source-35 analysis/review and handover §54 preserve limits on experimental claims. | Definitions, numerical derivations, coupling/locality questions and external evidence remain separate research tasks. No claim of current scientific validation. |
+| Specification/runtime authority | `JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/KNOWN_DOCUMENTATION_CONFLICTS.md`: A/B open, C resolved. Empty evidence entry and Riemann-status stub remain. Saved `docs/reports/TEST_EVIDENCE_2026-10-05T011500Z/` records 215 passing tests; no rerun here. | Review authority/identifier mappings before implementation changes. Tests establish bounded code behaviour, not the theory. |
+| Git/preservation | Prior assessment: HEAD/cached origin/main `2326941`; remote-tracking reflog records update by push, evidence of historical push only. Later reports/reviews untracked; handover after §27 uncommitted. | Preserve local work; any staging/publication requires separate approval and privacy review. No current remote-state claim; no fetch. |
+
+External evidence root: `~/Desktop/INFORMATION_ARCHIVE/COLLECTIONS/JUFE/`. Source pack: `Tom_Jennings_Source_Collection/{ORIGINALS,NONREDUNDANT_SOURCE_ARTIFACTS,SOURCE_MANIFEST.json,JUFE_Source_Assessment.md}`. Earlier reconciliation discrepancies are historical where later commits/rechecks resolve them; preservation is not equivalent to reading, analysis or independent review.
+
+## Recommended first research task
+
+A dedicated analysis of the combined RUFM/ABTM manuscript, beginning with existing structural analyses and DEF correspondences, followed by a separate independent review. Do not restart source acquisition or presume the two manuscripts are missing. This is a recommendation only; no research has begun.
+
+## Security and publication decisions — separate from completion
+
+- Handover §27 records owner-approved privacy-redacted publication derivatives. External archive originals and recovery copies are not that approved set. Do not stage `.workspace-os`, app data, preservation backups or credentials.
+- Later untracked reports, handover additions and this assessment have **not** received a new publication approval. Review personally identifying paths/metadata and intended audience before any staging/push; no visibility changes are authorised.
+- `JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/CTTM_ACCORD.md` records author ethical-use conditions and reservation of advanced implementation tuning/safety-critical logic. These are recorded author conditions, not blanket publication clearance or a legal enforceability determination. Their effect on any proposed release needs an explicit owner decision.
+- Do not present Full analysis coverage or existing tests as proof of mathematical/physical validity. Distinguish historical confirmed pushes from uncommitted local work.
+
+## Recovery and scope
+
+The pre-edit handover and identified untracked Markdown reports/reviews, workflow guide and modified documentation were copied to a private local recovery directory outside Git repositories, with file manifest and SHA-256 verification. The handover continuation records its location. No source, archive, runtime, credentials or app data was copied or edited. Originals remain in place. This report and an appended handover continuation are the only JUFE files changed in this save operation.

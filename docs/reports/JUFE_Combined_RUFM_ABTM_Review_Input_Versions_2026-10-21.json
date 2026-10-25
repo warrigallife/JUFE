@@ -1,0 +1,165 @@
+{
+  "description": "Scoped input versions captured before review; actual read scope is in reviewer receipts. Handover and completion record identify pre-update versions.",
+  "files": [
+    {
+      "path": "JUFE_COLLABORATOR_HANDOVER.md",
+      "bytes": 286024,
+      "sha256": "f023f2d63685962e7b8fe5ccaa7072ceacca2d1205bd8c92456c96ca3dfee1d0"
+    },
+    {
+      "path": "JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/00_RELEASES/INSTALLATION_CHECKLIST_v0.2_CHAPTER4.md",
+      "bytes": 301,
+      "sha256": "dd907bfad9c67d51d43d77d39a5553b56fd109b7140fd9a4c1d1b717600801d9"
+    },
+    {
+      "path": "JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/00_RELEASES/INSTALLATION_CHECKLIST_v0.2_CHAPTER5.md",
+      "bytes": 345,
+      "sha256": "a3a97a9ed1d45753f9c506aed7489a18b762d2d62edf2f0e79fb3f44913c365a"
+    },
+    {
+      "path": "JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/00_RELEASES/RELEASE_NOTES_v0.1_CHAPTER4.md",
+      "bytes": 341,
+      "sha256": "1189b465e764afcd1183b1e5ccaf1228713ab827371db378eddbe465be84df7e"
+    },
+    {
+      "path": "JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/00_RELEASES/RELEASE_NOTES_v0.2_CHAPTER4.md",
+      "bytes": 639,
+      "sha256": "0b1ff442b9a57a4e9b6e6befb9fddba0ce05cd02dc8495ed7740c94bada0ffe9"
+    },
+    {
+      "path": "JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/00_RELEASES/RELEASE_NOTES_v0.2_CHAPTER5.md",
+      "bytes": 1020,
+      "sha256": "e8a2067765eebe8ee618f2aa2eee42ab93e4d4604685fda531cb93af5e957590"
+    },
+    {
+      "path": "JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/Chapter_3_Gradient_Mechanics.md",
+      "bytes": 5032,
+      "sha256": "5c19e77d15d8fc19c56ca6d418c5fa3efff6063b06276564f150d8cdb61c347b"
+    },
+    {
+      "path": "JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/Chapter_4_Coupled_Evolution.md",
+      "bytes": 9810,
+      "sha256": "41201ebffa9a20f1da8af74f6b5dd4c11dcf13547b355e3d1264c3e2f3f3ebf5"
+    },
+    {
+      "path": "JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/Chapter_5.6_Non-Truncating_Ejection.md",
+      "bytes": 1798,
+      "sha256": "e179c8944f6e0719fb6b98beaa3cda872a2a06713e21953ef20d9ec1b5ceafa9"
+    },
+    {
+      "path": "JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/Chapter_5_Phase_Lock.md",
+      "bytes": 4656,
+      "sha256": "ce0ccc784ec915f801a76ec65aa759684a0dcd42453ccba4f5422acf8fbf0e7f"
+    },
+    {
+      "path": "JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/Chapter_5_Post_Phase_Lock_Mechanics.md",
+      "bytes": 9455,
+      "sha256": "55f5829f527c28b8af7b69a987b0aff40ed68e240b75d10c2cd992d859c3302c"
+    },
+    {
+      "path": "JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/Chapter_6_Global_Tensegrity_Equilibrium_Matrix.md",
+      "bytes": 17137,
+      "sha256": "beee3e3e7042cf4690d1d43676f69fae0e34edcbabc9d4e5d0099e697071536c"
+    },
+    {
+      "path": "JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/Chapter_7_Unified_ABTM_Field_Equations.md",
+      "bytes": 34580,
+      "sha256": "e1bcdccddc4136d1b7d23d37bc389353de9275b9075efba5e7203b73424437cc"
+    },
+    {
+      "path": "JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/03_REFERENCE_LIBRARY/LEMMAS/LEMMA-3.1_Cross_Axial_Helical_Deflection.md",
+      "bytes": 7220,
+      "sha256": "6da9deb005268efb0542b76feb503880ec587db4fb802a5df8c2913224b223a7"
+    },
+    {
+      "path": "JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/03_REFERENCE_LIBRARY/THEOREMS/03_REFERENCE_LIBRARY/THEOREMS/THEOREM_4_2.md",
+      "bytes": 3071,
+      "sha256": "8f925219d7706383701489f35d18264f77fee64e1937e91599dd58ea7ec21556"
+    },
+    {
+      "path": "JUFE_RESEARCH/TOOLS/SOURCES/MANUSCRIPTS/PROVENANCE_MAP.md",
+      "bytes": 9875,
+      "sha256": "86397008792de58e86dd02ef68bd933ee5de9e22f20c71f56b11eeaa2d284eac"
+    },
+    {
+      "path": "Research Processing/Manuscript 001/Assumptions.md",
+      "bytes": 1475,
+      "sha256": "93a789dae620299f9085784ee7cf5ee0cb4445ff8a3ac1656d6c61f8ded01230"
+    },
+    {
+      "path": "Research Processing/Manuscript 001/Definitions.md",
+      "bytes": 2602,
+      "sha256": "73c9893282ba54734dc131f1327029e1734f5ca9dc82043c0122914c5416cb5b"
+    },
+    {
+      "path": "Research Processing/Manuscript 001/Dependencies.md",
+      "bytes": 1712,
+      "sha256": "294af5eb67c6bab3d3717b9dd67b47893131b958d2338e49e9b0599420ce6c0d"
+    },
+    {
+      "path": "Research Processing/Manuscript 001/Structural Analysis.md",
+      "bytes": 3709,
+      "sha256": "9768b9d39af64ccf2e03f26e49fcb59879df95916cc78b036195edda9225cdf7"
+    },
+    {
+      "path": "Research Processing/Manuscript 001/Validation.md",
+      "bytes": 2079,
+      "sha256": "62c646e243db6392484041a25c659f9d3a5e9572a68d4e835b893f8e383d3044"
+    },
+    {
+      "path": "Research Processing/Manuscript 002/Assumptions.md",
+      "bytes": 2328,
+      "sha256": "0e594be870fdcdfa4afe01383303e603c5955ec589fc82366e4d5d36361cc16a"
+    },
+    {
+      "path": "Research Processing/Manuscript 002/Definitions.md",
+      "bytes": 3630,
+      "sha256": "474a4ff7466fdf64cbb554b24512b38b6e2658b1a0f1a0cc9749ad967c0feb96"
+    },
+    {
+      "path": "Research Processing/Manuscript 002/Dependencies.md",
+      "bytes": 1428,
+      "sha256": "66dccec80c3f2af05bbffdb77ac2a867a632c003e98f3922fd40eb8bf50e7d24"
+    },
+    {
+      "path": "Research Processing/Manuscript 002/Structural Analysis.md",
+      "bytes": 2220,
+      "sha256": "f04a688b993ad6d4c41057ef74246d431556dc06ed4465b053f945bb381eb47a"
+    },
+    {
+      "path": "Research Processing/Manuscript 002/Validation.md",
+      "bytes": 1513,
+      "sha256": "66b12bf865ac12671e96ce7b4817237f2510d5116982cc4a1ca7318b55b2d6f7"
+    },
+    {
+      "path": "Research Processing/Relational Unified Field Mechanics Analytical Resolution of Critical\u0393\u00c7\u00aa.md",
+      "bytes": 8706,
+      "sha256": "79f2bd4521bb0fc84dd8daf1a056d53c49e8b664a799f870bdda3e5ee9777fa1"
+    },
+    {
+      "path": "docs/reports/JUFE_10_Foundational_Analysis_Independent_Review_2026-10-09.md",
+      "bytes": 20636,
+      "sha256": "b0cc9bd31f338981b791888709d1aaf913961957ba5e3be0992f4c73c4188e16"
+    },
+    {
+      "path": "docs/reports/JUFE_11_12_Foundational_Analysis_Independent_Review_2026-10-09.md",
+      "bytes": 31067,
+      "sha256": "3de85ad66bb4e36114b954a91dc187e4baabe95d931027ac1a56235d87a75239"
+    },
+    {
+      "path": "docs/reports/JUFE_26_Foundational_Analysis_Independent_Review_2026-10-10.md",
+      "bytes": 12236,
+      "sha256": "967b384627a9ac304bb2dfe2d515fcd9eac3b1cce27114f5634af5dd2e056111"
+    },
+    {
+      "path": "docs/reports/JUFE_Combined_RUFM_ABTM_Completion_Record_2026-10-21.md",
+      "bytes": 12138,
+      "sha256": "e12c56cdaca49961cbcbb273fe97e1eeca59da035a31c08656546b31a74bc5bf"
+    },
+    {
+      "path": "docs/reports/JUFE_Combined_RUFM_ABTM_Coverage_Assessment_2026-10-20.md",
+      "bytes": 6659,
+      "sha256": "39f1a9cb8659f0b6e4cd4f15a5ba6027bb61861ecd158f942228711977c957fa"
+    }
+  ]
+}

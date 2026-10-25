@@ -130,11 +130,11 @@ The manuscript defines the Expanded Tensegrity-Stress Tensor as the sum of geome
 
 ### Name
 
-Toroidal Work Functional (Ξ)
+Toroidal Work Term (Ξ)
 
 ### Status
 
-EXPLICIT
+EXPLICIT (symbol occurrence and toroidal-work association only; mathematical type UNRESOLVED)
 
 ### Source
 
@@ -142,11 +142,11 @@ Section 2
 
 ### Category
 
-Mathematical Functional
+Symbol — function/functional/tensorial type not specified by the manuscript
 
 ### Definition
 
-The manuscript introduces the Toroidal Work Functional (Ξ) as the mathematical representation of toroidal work contributing to the manifold dynamics.
+The manuscript introduces Ξ, explicitly associated with toroidal work contributing to the manifold dynamics. The manuscript does not state whether Ξ is a function, functional, or tensorial quantity. Per `JUFE_DEPENDENCY_COMPLETION_FRAMEWORK/02_SPECIFICATION/Volume_III/Chapter_7_Unified_ABTM_Field_Equations.md` ("Definition and Type of Ξ" — UNRESOLVED), this mathematical type remains unresolved; only the symbol's explicit occurrence within the toroidal-work expression is established.
 
 ---
 

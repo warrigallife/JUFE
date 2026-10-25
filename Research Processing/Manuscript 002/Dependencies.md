@@ -36,7 +36,7 @@ Structural Constraint Term
 
 +
 
-Toroidal Work Functional
+Toroidal Work Term (Ξ — mathematical type unresolved; see Definitions.md D-006)
 
 +
 
@@ -94,7 +94,7 @@ Non-linear Catastrophic Regime
 
 ## Dependency Chain 5
 
-Toroidal Work Functional
+Toroidal Work Term (Ξ — mathematical type unresolved; see Definitions.md D-006)
 
 ↓
 

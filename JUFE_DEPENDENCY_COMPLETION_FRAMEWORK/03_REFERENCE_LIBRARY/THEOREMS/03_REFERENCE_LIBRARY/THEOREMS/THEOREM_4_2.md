@@ -20,7 +20,7 @@ No mathematical proof, engineering interpretation, implementation guidance, or c
 
 Section 2.2 (*Phase-Lock and Ejection Mechanics*) states that once perfect internal equilibrium has been achieved and the isolated field reaches Phase Lock, the underlying geometric information cannot be clipped or truncated.
 
-Instead, the stabilized structural matrix is preserved and subsequently ejected from the boundary node as a harmonic packet.
+Non-truncation is a constraint governing that ejection itself, not a separate, prior physical preservation stage: the stabilized structural matrix is ejected from the boundary node as a harmonic packet, with its structural information required to remain intact through that transfer.
 
 The manuscript presents this proposition as **Theorem 4.2**.
 
@@ -30,11 +30,13 @@ The manuscript presents this proposition as **Theorem 4.2**.
 
 Within this repository, Theorem 4.2 records the manuscript proposition that:
 
-> Following Phase Lock, the stabilized structural information of the isolated field cannot be clipped, truncated, or destroyed through the boundary process.
+> Following Phase Lock, the stabilized structural information of the isolated field cannot be clipped or truncated.
 
-Instead, the preserved structural matrix remains intact and is subsequently transferred as an un-truncated harmonic packet.
+This is a repository paraphrase of the manuscript's own sentence (Section 2.2: "By Theorem 4.2, the underlying geometric information cannot be clipped or truncated; instead, the stabilized structural matrix is ejected from the boundary node as a harmonic packet into the clean cell pool..."), not a verbatim quotation. The paraphrase above has been corrected to drop "destroyed," a word the manuscript does not use at this point.
 
-This theorem is recorded exactly as presented by the manuscript.
+The constraint is that this structural information remains un-truncated through transfer as the harmonic packet.
+
+This theorem records the manuscript's proposition in paraphrase, not as an exact transcription.
 
 No formal mathematical proof is supplied within the current manuscript text.
 
@@ -82,11 +84,7 @@ Internal Equilibrium
 
 Phase Lock
 
-↓
-
-**Theorem 4.2 — Non-Truncating Information Preservation**
-
-↓
+↓ (this transfer is governed by the Theorem 4.2 non-truncation constraint — not a separate, prior physical preservation stage)
 
 Harmonic Packet Ejection
 

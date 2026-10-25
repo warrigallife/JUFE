@@ -57,7 +57,7 @@ Provides a conceptual interpretation of the proposed mathematical framework, inc
 - Φ
 - 𝕫₆ Structural Lattice
 - Ω_T (Master Frequency)
-- Ξ (Toroidal Work Functional)
+- Ξ (Toroidal Work Term — mathematical type unresolved; see D-006)
 - Γₖ (Harmonic Modulation)
 - S (Sensitivity Matrix)
 

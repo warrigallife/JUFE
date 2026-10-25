@@ -74,6 +74,36 @@ The concept represents a plausible interpretation, extension, or working hypothe
 The concept remains incomplete, uncertain, or dependent upon additional evidence before further progression.
 These classifications preserve transparency throughout the research process and distinguish established material from ongoing investigation.
 
+### Cross-reference: report-specific four-way labelling (added 9 October 2026)
+
+Some analysis reports in `docs/reports/` (for example
+`JUFE_37_Mathematical_Analysis.md` and
+`JUFE_8_Foundational_Analysis_2026-10-06.md`) label individual findings
+using a four-way scheme — **source assertion / verified / interpretation /
+unresolved** — rather than this Guide's three-way classification above.
+The two schemes are related but not interchangeable, and the four-way
+scheme is not a strict subset or restatement of this one:
+
+- **source assertion** narrows this Guide's **EXPLICIT**: it marks a claim
+  as stated in the original manuscript, without yet confirming the
+  manuscript's own claim against anything external.
+- **verified** has no direct equivalent above: it marks that an agent has
+  independently re-confirmed a citation, file hash, or cross-reference
+  against the primary source itself — a check on citation accuracy, not a
+  status of the underlying concept.
+- **interpretation** corresponds approximately to this Guide's
+  **PROVISIONAL**, with the same caveat that it remains a working reading,
+  not an established result.
+- **unresolved** corresponds directly to this Guide's **UNRESOLVED** in
+  both schemes.
+
+This note records the relationship between the two schemes; it does not
+replace, extend, or promote the four-way scheme into a repository-wide
+standard — the three-way classification above remains this Guide's own
+standing convention. Source reference:
+`docs/reports/JUFE_Source8_Analysis_Reusability_Check_2026-10-09.md`
+(Omission 3).
+
 ## Traceability
 
 Every processed research artefact should remain traceable to its origin.
